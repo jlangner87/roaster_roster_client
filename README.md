@@ -10,8 +10,6 @@
 
 #### Deployed Application [Name] (URL here)
 
-#### API Project Files [Repo](https://github.com/jlangner87/roaster_roster)
-
 ---
 
 ### **_Description_**
@@ -41,7 +39,7 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 
 ### **_Trello Board_**
 
-#### [Trello](https://trello.com/invite/b/95nVN1hO/35ebf9deab96d041ac13810f38896965/roaster-roster)
+#### [Trello](https://trello.com/b/95nVN1hO/roaster-roster)
 
 ---
 
@@ -54,6 +52,8 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 - React.JS
 - Python
 - Django
+
+#### API Project Files [Repo](https://github.com/jlangner87/roaster_roster)
 
 ---
 
