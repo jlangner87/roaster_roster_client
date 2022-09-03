@@ -8,7 +8,7 @@ const RoasterForms = () => {
           <label for="roaster_name">Roasterie Name:</label><br/>
           <input id="roaster_name" type="text" /><br/>
           <label for="roaster_origin"> State: </label><br/>
-          <input for="roaster_origin" type="text"/><br/>
+          <input id="roaster_origin" type="text"/><br/>
           <label for="description"> Description: </label><br/>
           <textarea id="description" type="text"/><br/>
           <label for="buy_url">Website Link:</label><br/>
