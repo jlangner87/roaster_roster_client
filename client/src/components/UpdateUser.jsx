@@ -1,8 +1,8 @@
-const UserForms = () => {
+const UpdateUser = () => {
 
   return (
-    <div className="new_user_form">
-      <div className="new_user_container">
+    <div className="update_delete_user_form">
+      <div className="update_delete_user_container">
         <h1 className="form_header">Register your userie</h1>
         <form className="user_form">
 
@@ -22,11 +22,12 @@ const UserForms = () => {
           <br/>
           <label for="email">Email:</label><br/>
           <input type="email" /><br/>
-          <button className="update">REGISTER</button>
+          <button className="update">UPDATE</button><br/>
+          <button className="delete">DELETE</button>
         </form>
       </div>
     </div>
   )
 }
 
-export default UserForms
+export default UpdateUser
