@@ -26,7 +26,7 @@ const UpdateDeleteBean = () => {
           <br/>
           <button className="update">SUBMIT NEW BEAN</button>
           <br/>
-          <button className="update">SUBMIT NEW BEAN</button>
+          <button className="delete">DELETE BEAN</button>
         </form>
         </div>
     </div>

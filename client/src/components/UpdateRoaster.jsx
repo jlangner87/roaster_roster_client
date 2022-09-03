@@ -1,9 +1,9 @@
-const RoasterForms = () => {
+const UpdateDeleteRoaster = () => {
 
   return (
-    <div className="roaster_form">
-      <div className="new_roaster_container">
-        <h1 className="form_header">Register your Roasterie</h1>
+    <div className="update_delete_roaster">
+      <div className="update_delete_roaster_container">
+        <h1 className="form_header">Update your Roasterie</h1>
         <form className="roaster_form">
           <label for="roaster_name">Roasterie Name:</label><br/>
           <input id="roaster_name" type="text" /><br/>
@@ -16,7 +16,9 @@ const RoasterForms = () => {
           <label for="roaster_image">Cover Image Upload:</label><br/>
           <input id="roaster_image" type="file" /><br/>
           <br/>
-          <button className="update">REGISTER</button>
+          <button className="update">UPDATE</button>
+          <br></br>
+          <button className="delete">DELETE</button>
         </form>
       </div>
     </div>

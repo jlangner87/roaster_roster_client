@@ -1,7 +1,7 @@
 const BeanForm = () => {
 
   return (
-    <div className="bean_form_page">
+    <div className="new_bean_form">
       <div className="bean_form_container">
         <h1 className="form_header">Add a New Bean</h1>
         <form className="bean_form">
