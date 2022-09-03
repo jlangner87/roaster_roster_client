@@ -1,11 +1,10 @@
 import './App.css'
-import BeanForm from './components/BeanForms'
+import Home from './pages/home'
 
 function App() {
   return (
     <div className="App">
-      <h1>This is MY site now!</h1>
-      <BeanForm />
+      <Home />
     </div>
   )
 }
