@@ -4,15 +4,16 @@ import Footer from '../components/Footer'
 import Roasters from './roasters'
 import RoasterHome from './roasterHome'
 import UserForms from '../components/UserForms'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div className="home">
       <Header />
       <Roasters />
-      <Footer />
       <RoasterHome />
       <UserForms />
+      <Footer />
     </div>
   )
 }
