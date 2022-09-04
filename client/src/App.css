@@ -3,3 +3,27 @@ html {
   color: white;
   text-align: center;
 }
+
+.header {
+  background-color: blue;
+}
+
+.nav {
+  background-color: red;
+}
+
+.footer {
+  background-color: mediumseagreen;
+}
+
+.login {
+  background-color: purple;
+}
+
+.roaster_home {
+  background-color: darkslategray;
+}
+
+.new_user_form {
+  background-color: darkblue;
+}

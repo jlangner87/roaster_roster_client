@@ -3,7 +3,7 @@ const UpdateUser = () => {
   return (
     <div className="update_delete_user_form">
       <div className="update_delete_user_container">
-        <h1 className="form_header">Register your userie</h1>
+        <h1 className="form_header">Register your yourself</h1>
         <form className="user_form">
 
           <label for="user_name">User Name:</label><br/>
