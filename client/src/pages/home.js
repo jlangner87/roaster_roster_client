@@ -9,11 +9,9 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className="home">
-      <Header />
-      <Roasters />
-      <RoasterHome />
-      <UserForms />
-      <Footer />
+      <Link to="/roasters">All Roasters</Link>
+      <br />
+      <Link to="/beans">All Beans</Link>
     </div>
   )
 }
