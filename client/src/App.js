@@ -8,6 +8,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import RoasterHome from './pages/roasterHome'
 import Retailers from './pages/retailers'
+import UserForms from './components/UserForms'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         {/* <Route path="/retailers/:id" element={<Retailers />} /> */}
         <Route path="/admin" element={<RoasterHome />} />
         // ^^This route needs to be protected^^
+        <Route path="/register" element={<UserForms />} />
       </Routes>
       <Footer />
     </div>

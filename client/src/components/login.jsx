@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Login = () => {
   return (
     <div className="login">
@@ -6,6 +8,8 @@ const Login = () => {
         <p>::conditional rendering::</p>
         <button>Log out</button>
       </form>
+      <p>Not registered yet? That's okay. <br/> <Link to='/register'>Register Here</Link>
+      </p>
     </div>
   )
 }

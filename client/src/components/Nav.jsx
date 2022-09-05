@@ -9,15 +9,13 @@ const Nav = () => {
       <h5>A dropdown box top right would be nice</h5>
       <Link to='/' className="nav_link">Home</Link>
       <br />
-      <Link to="/roasters" className="nav_link">All Roasters</Link>
+      <Link to="/roasters" className="nav_link">Roasters</Link>
       <br />
-      <Link to="/beans" className="nav_link">All Beans</Link>
+      <Link to="/beans" className="nav_link">Beans</Link>
       <br/>
-      <Link to='/retailers' className="nav_link">All Retailers</Link>
+      <Link to='/retailers' className="nav_link">Retailers</Link>
       <br/>
-        <button>Log in</button>
-        <p>::conditional rendering::</p>
-        <button>Log out</button>
+      <Login/>
     </div>
   )
 }
