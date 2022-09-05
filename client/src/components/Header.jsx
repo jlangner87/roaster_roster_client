@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <h1>I AM A MASSIVE HEADER AT THE TOP OF THE PAGE!</h1>
-      ...<Nav/>...
+      <Nav/>
     </div>
   )
 }

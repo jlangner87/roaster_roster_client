@@ -1,5 +1,4 @@
 import BeanForm from '../components/BeanForms'
-import BeanProfile from '../components/BeanProfile'
 
 const RoasterHome = () => {
   return (
@@ -7,7 +6,15 @@ const RoasterHome = () => {
       <p>Roaster Homepage</p>
       <p>this page is private and only accessible by roasters</p>
       <p>My Bean Collection</p>
-      <BeanProfile />
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
+      <p>Bean Container</p>
       <BeanForm />
     </div>
   )

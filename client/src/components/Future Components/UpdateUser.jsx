@@ -21,7 +21,7 @@ const UpdateUser = () => {
           <input id="user_image" type="file" /><br/>
           <br/>
           <label for="email">Email:</label><br/>
-          <input type="email" /><br/>
+          <input id="email" type="email" /><br/>
           <button className="update">UPDATE</button><br/>
           <button className="delete">DELETE</button>
         </form>

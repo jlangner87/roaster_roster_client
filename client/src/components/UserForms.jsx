@@ -3,7 +3,7 @@ const UserForms = () => {
   return (
     <div className="new_user_form">
       <div className="new_user_container">
-        <h1 className="form_header">Register your userie</h1>
+        <h1 className="form_header">Register Here</h1>
         <form className="user_form">
 
           <label for="user_name">User Name:</label><br/>

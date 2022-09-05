@@ -9,7 +9,7 @@ html {
 }
 
 .nav {
-  background-color: red;
+  border: 3px dashed white;
 }
 
 .footer {
@@ -17,13 +17,9 @@ html {
 }
 
 .login {
-  background-color: purple;
+  border: 3px dashed white;
 }
 
-.roaster_home {
-  background-color: darkslategray;
-}
-
-.new_user_form {
-  background-color: darkblue;
+.home {
+  background-color: red;
 }
