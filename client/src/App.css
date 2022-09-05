@@ -23,3 +23,7 @@ html {
 .home {
   background-color: red;
 }
+
+a:visited {
+  color: aqua;
+}

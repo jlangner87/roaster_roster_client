@@ -7,11 +7,13 @@ const Nav = () => {
     <div className="nav">
       <h4>This is the nav control. It will go somewhere</h4>
       <h5>A dropdown box top right would be nice</h5>
-      <Link to='/'>Home</Link>
+      <Link to='/' className="nav_link">Home</Link>
       <br />
-      <Link to="/roasters">All Roasters</Link>
+      <Link to="/roasters" className="nav_link">All Roasters</Link>
       <br />
-      <Link to="/beans">All Beans</Link>
+      <Link to="/beans" className="nav_link">All Beans</Link>
+      <br/>
+      <Link to='/retailers' className="nav_link">All Retailers</Link>
       <br/>
         <button>Log in</button>
         <p>::conditional rendering::</p>
