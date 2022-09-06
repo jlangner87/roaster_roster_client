@@ -9,8 +9,14 @@ const UpdateDeleteBean = () => {
           <input id="bean_name" type="text" /><br/>
           <label for="bean_origin"> Origin: </label><br/>
           <input for="bean_origin" type="text"/><br/>
-          <label for="bean_type">Bean Type:</label><br/>
-          <input id="bean_type" type="text" /><br/>
+          <label for="whole_bean">Whole Bean:</label><br/>
+          <input for="whole_bean" type="radio" /><br/>
+          <label for="ground">Ground:</label><br/>
+          <input for="" type="radio" /><br/>
+          <label for="both">Whole Bean or Ground:</label><br/>
+          <input for="both" type="radio" /><br/>
+          <input for="organic" type="radio" /><br/>
+          <input for="organic" type="radio" /><br/>
           <label for="roast_type">Roast Type:</label><br/>
           <input id="roast_type" type="text" /><br/>
           <label for="organic"> Organic </label><br/>
