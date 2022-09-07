@@ -1,6 +1,7 @@
-// //Roaster Routes
-// app.get('/roasters', RoasterController.getRoasters)
+const Router = require('express').Router()
+const RoasterController = require('../controllers/RoasterController')
 
-// app.get('/roasters/:id', (req, res) => {
-//   res.send(`This is the roaster profile for roaster with id: ${req.params.id}`)
-// })
+Router.get('/roasters', RoasterController.get)
+Router.get('/roasters', RoasterController.getOne)
+
+module.exports = Router
