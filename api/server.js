@@ -4,6 +4,8 @@ const logger = require('morgan')
 const express = require('express')
 const PORT = process.env.PORT || 3001
 
+const BeanController = require('./controllers/BeanController')
+
 const app = express()
 
 app.use(cors())
@@ -25,9 +27,8 @@ app.get('/roasters', (req, res) => {
 app.get('/roasters/:id', (req, res) => {
   res.send(`This is the roaster profile for roaster with id: ${req.params.id}`)
 })
-app.get('/beans', (req, res) => {
-  res.send('this is the beans list page')
-})
+app.get('/beans', BeanController.getBeans)
+
 app.get('/beans/:id', (req, res) => {
   res.send(`This is the bean display for bean with id: ${req.params.id}`)
 })
