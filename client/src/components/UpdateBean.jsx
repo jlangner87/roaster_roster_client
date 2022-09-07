@@ -9,18 +9,19 @@ const UpdateDeleteBean = () => {
           <input id="bean_name" type="text" /><br/>
           <label for="bean_origin"> Origin: </label><br/>
           <input for="bean_origin" type="text"/><br/>
-          <label for="whole_bean">Whole Bean:</label><br/>
+          <br></br> 
+          <label>Bean Type:</label><br/>
+          <label for="whole_bean">Whole Bean:</label>
           <input for="whole_bean" type="radio" /><br/>
-          <label for="ground">Ground:</label><br/>
+          <label for="ground">Ground:</label>
           <input for="" type="radio" /><br/>
-          <label for="both">Whole Bean or Ground:</label><br/>
+          <label for="both">Both:</label>
           <input for="both" type="radio" /><br/>
+          <br></br>
+          <label>Organic:</label><br/>
+          <label for="organic"> True: </label>
           <input for="organic" type="radio" /><br/>
-          <input for="organic" type="radio" /><br/>
-          <label for="roast_type">Roast Type:</label><br/>
-          <input id="roast_type" type="text" /><br/>
-          <label for="organic"> Organic </label><br/>
-          <input for="organic" type="radio" /><br/>
+          <br></br>>
           <label for="description"> Description: </label><br/>
           <textarea id="description" type="text"/><br/>
           <label for="price">Price:</label><br/>
