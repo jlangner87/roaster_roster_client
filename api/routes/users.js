@@ -1,49 +1,9 @@
-const { User } = require('../models/users')
+const Router = require('express').Router()
+const UserController = require('../controllers/UserController')
 
-//GET
-const getUsers = async (req, res) => {
-  let allUsers = await User.findAll()
-  res.send(allUsers)
-}
+Router.get('/:users_id', UserController.getOneUser)
+Router.post('/register', UserController.postUser)
+Router.delete('/:users_id', UserController.deleteUser)
+Router.put('/:users_id', UserController.putUser)
 
-const getOneUser = async (req, res) => {
-  let userId = parseInt(req.params.users_id)
-  let selectedUser = await User.findOne({
-    where: { id: userId }
-  })
-  res.send(selectedUser)
-}
-//POST
-const postUser = async (req, res) => {
-  let newUserInfo = {
-    ...req.body
-  }
-  let newUser = await User.create(newUserInfo)
-  res.send(newUser)
-}
-
-//DELETE
-const deleteUser = async (req, res) => {
-  let userId = parseInt(req.params.users_id)
-  await User.destroy({
-    where: { id: userId }
-  })
-  res.send(`Bean with id ${userId} was destroyed.`)
-}
-
-//PUT
-const putUser = async (req, res) => {
-  let userId = parseInt(req.params.users_id)
-  let updatedUser = await User.update(req.body, {
-    where: { id: userId }
-  })
-  res.send(updatedUser)
-}
-
-module.exports = {
-  getUsers,
-  getOneUser,
-  postUser,
-  deleteUser,
-  putUser
-}
+module.exports = Router
