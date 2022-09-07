@@ -1,4 +1,4 @@
-const { Bean } = require('../models/beans')
+const { Bean } = require('../models')
 
 //GET
 const getBeans = async (req, res) => {

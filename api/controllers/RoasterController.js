@@ -8,7 +8,7 @@ const getRoasters = async (req, res) => {
 
 const getOneRoaster = async (req, res) => {
   let roasterId = parseInt(req.params.roasters_id)
-  let selectedRoaster = await Roaster.findOne({
+  let selectedRoaster = await Roaster.find({
     where: { id: roasterId }
   })
   res.send(selectedRoaster)
@@ -16,10 +16,10 @@ const getOneRoaster = async (req, res) => {
 
 //POST
 const postRoaster = async (req, res) => {
-  let newRoasterInfo = {
+  let newRoasterBody = {
     ...req.body
   }
-  let newRoaster = await Roaster.create(newRoasterInfo)
+  let newRoaster = await Recipe.create(newRoasterBody)
   res.send(newRoaster)
 }
 
