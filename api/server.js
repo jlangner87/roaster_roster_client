@@ -4,7 +4,6 @@ const logger = require('morgan')
 const express = require('express')
 const PORT = process.env.PORT || 3001
 const AppRouter = require('./routes/app')
-const RoasterController = require('./controllers/RoasterController')
 
 const app = express()
 
@@ -18,5 +17,5 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('The root is alive ⚡️⚡️!')
+  res.send('The root is brewing ☕️!')
 })

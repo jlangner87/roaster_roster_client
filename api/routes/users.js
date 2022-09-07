@@ -43,5 +43,7 @@ const putUser = async (req, res) => {
 module.exports = {
   getUsers,
   getOneUser,
-  postUser
+  postUser,
+  deleteUser,
+  putUser
 }
