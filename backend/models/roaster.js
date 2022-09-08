@@ -9,16 +9,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Roaster.hasMany(models.Bean, { foreignKey: 'roaster' })
     }
   }
   Roaster.init(
     {
       name: DataTypes.STRING,
-      state: DataTypes.STRING,
-      bio: DataTypes.STRING,
-      site: DataTypes.STRING,
-      logo: DataTypes.STRING,
-      beans: DataTypes.STRING
+      location: DataTypes.STRING,
+      bio: DataTypes.TEXT,
+      wesite: DataTypes.STRING,
+      logo: DataTypes.STRING
     },
     {
       sequelize,

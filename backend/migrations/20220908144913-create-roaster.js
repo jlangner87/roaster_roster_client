@@ -11,19 +11,16 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      state: {
+      location: {
         type: Sequelize.STRING
       },
       bio: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
-      site: {
+      wesite: {
         type: Sequelize.STRING
       },
       logo: {
-        type: Sequelize.STRING
-      },
-      beans: {
         type: Sequelize.STRING
       },
       createdAt: {

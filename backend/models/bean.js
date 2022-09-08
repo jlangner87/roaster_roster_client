@@ -9,19 +9,28 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Bean.belongsTo(models.Roaster, { foreignKey: 'roaster' })
     }
   }
   Bean.init(
     {
       name: DataTypes.STRING,
+      roaster: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'roasters',
+          key: 'id'
+        }
+      },
       origin: DataTypes.STRING,
       grind: DataTypes.STRING,
       roast: DataTypes.STRING,
-      description: DataTypes.STRING,
-      price: DataTypes.FLOAT,
-      purchaceLink: DataTypes.STRING,
-      img: DataTypes.STRING,
-      organic: DataTypes.STRING
+      description: DataTypes.TEXT,
+      organic: DataTypes.BOOLEAN,
+      buy_link: DataTypes.STRING,
+      image: DataTypes.STRING,
+      price: DataTypes.DECIMAL
     },
     {
       sequelize,
