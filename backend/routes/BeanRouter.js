@@ -6,5 +6,6 @@ Router.get('/:beans_id', controller.GetOneBean)
 Router.post('/add', controller.PostBean)
 Router.delete('/:beans_id', controller.DeleteBean)
 Router.patch('/:beans_id', controller.PatchBean)
+Router.get('/collections/:roaster_id', controller.GetBeanByRoaster)
 
 module.exports = Router

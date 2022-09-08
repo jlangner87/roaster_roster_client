@@ -46,10 +46,15 @@ const PatchBean = async (req, res) => {
   res.send(editedBean)
 }
 
+const GetBeanByRoaster = async (req, res) => {
+  res.send(req.params.roaster_id)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
   GetOneBean,
   DeleteBean,
-  PatchBean
+  PatchBean,
+  GetBeanByRoaster
 }
