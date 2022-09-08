@@ -38,7 +38,12 @@ const DeleteBean = async (req, res) => {
 }
 
 const PatchBean = async (req, res) => {
-  res.send(`The update route lands on the PatchBean controller`)
+  let beanId = parseInt(req.params.beans_id)
+  let editedBean = await Bean.update(req.body, {
+    where: { id: beanId },
+    returning: true
+  })
+  res.send(editedBean)
 }
 
 module.exports = {
