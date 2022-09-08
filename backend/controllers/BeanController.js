@@ -30,7 +30,11 @@ const GetOneBean = async (req, res) => {
 }
 
 const DeleteBean = async (req, res) => {
-  res.send('Delete route ends at the delete controller')
+  let beanId = parseInt(req.params.beans_id)
+  await Bean.destroy({
+    where: { id: beanId }
+  })
+  res.send('The bean has been killed')
 }
 
 module.exports = {
