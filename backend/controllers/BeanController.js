@@ -10,17 +10,19 @@ const GetBeans = async (req, res) => {
 }
 
 const PostBean = async (req, res) => {
-  try {
-    let beanDetails = {
-      ...req.body
-    }
-    let newBean = await Bean.create(beanDetails)
-    res.send(newBean)
-  } catch (err) {
-    throw err
-  }
+  res.send(`The post controller is active`)
+  // try {
+  //   let beanDetails = {
+  //     ...req.body
+  //   }
+  //   let newBean = await Bean.create(beanDetails)
+  //   res.send(newBean)
+  // } catch (err) {
+  //   throw err
+  // }
 }
 
 module.exports = {
-  GetBeans
+  GetBeans,
+  PostBean
 }
