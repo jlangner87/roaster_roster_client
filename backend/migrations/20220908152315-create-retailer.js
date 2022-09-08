@@ -1,7 +1,7 @@
 'use strict'
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('beans', {
+    await queryInterface.createTable('retailers', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,37 +11,14 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      roaster: {
-        type: Sequelize.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'roasters',
-          key: 'id'
-        }
-      },
-      origin: {
+      location: {
         type: Sequelize.STRING
       },
-      grind: {
+      logo: {
         type: Sequelize.STRING
       },
-      roast: {
+      website: {
         type: Sequelize.STRING
-      },
-      description: {
-        type: Sequelize.TEXT
-      },
-      organic: {
-        type: Sequelize.BOOLEAN
-      },
-      buy_link: {
-        type: Sequelize.STRING
-      },
-      image: {
-        type: Sequelize.STRING
-      },
-      price: {
-        type: Sequelize.DECIMAL
       },
       createdAt: {
         allowNull: false,
@@ -54,6 +31,6 @@ module.exports = {
     })
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('beans')
+    await queryInterface.dropTable('retailers')
   }
 }

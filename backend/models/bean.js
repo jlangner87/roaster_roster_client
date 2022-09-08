@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Bean.belongsTo(models.Roaster, { foreignKey: 'roaster' })
+      Bean.belongsTo(models.Roaster, { foreignKey: 'roaster' }),
+        Bean.belongsTo(models.Retailer, { foreignKey: 'retailer' })
     }
   }
   Bean.init(
@@ -30,7 +31,15 @@ module.exports = (sequelize, DataTypes) => {
       organic: DataTypes.BOOLEAN,
       buy_link: DataTypes.STRING,
       image: DataTypes.STRING,
-      price: DataTypes.DECIMAL
+      price: DataTypes.DECIMAL,
+      retailer: {
+        type: DataTypes.INTEGER,
+        onDelete: 'NO ACTION',
+        references: {
+          model: 'retailers',
+          key: 'id'
+        }
+      }
     },
     {
       sequelize,
