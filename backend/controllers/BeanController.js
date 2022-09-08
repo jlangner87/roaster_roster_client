@@ -37,9 +37,14 @@ const DeleteBean = async (req, res) => {
   res.send('The bean has been killed')
 }
 
+const PatchBean = async (req, res) => {
+  res.send(`The update route lands on the PatchBean controller`)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
   GetOneBean,
-  DeleteBean
+  DeleteBean,
+  PatchBean
 }
