@@ -23,8 +23,17 @@ useEffect((props) => {
   return (
     <div className="baean_profile">
       <h1>{bean.name}</h1>
+      <p>Roasted by: {bean.roaster}</p>
+      <p>{bean.roast}</p>
+      <p>{bean.origin}</p>
+      <p>{bean.grind}</p>
       <p>{bean.description}</p>
-      <img src={bean.image} alt='prodict image'/>
+      <p> Buy Directly from {bean.roaster}</p>
+      <a href={bean.buy_link}>
+        <button>Buy Now</button>
+      </a>
+      <p>${bean.price}</p>
+      <img src={bean.image} alt='product image'/>
     </div>
   )
 }
