@@ -10,7 +10,7 @@ const GetBeans = async (req, res) => {
 }
 
 const PostBean = async (req, res) => {
-  res.send(`The post controller is active`)
+  res.send('Make a new bean here')
   // try {
   //   let beanDetails = {
   //     ...req.body
@@ -22,7 +22,12 @@ const PostBean = async (req, res) => {
   // }
 }
 
+const GetOneBean = async (req, res) => {
+  res.send('The get one bean route works')
+}
+
 module.exports = {
   GetBeans,
-  PostBean
+  PostBean,
+  GetOneBean
 }
