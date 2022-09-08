@@ -47,11 +47,19 @@ const PatchBean = async (req, res) => {
 }
 
 const GetBeanByRoaster = async (req, res) => {
-  let roaster_id = parseInt(req.params.roaster_id)
+  let roasterId = parseInt(req.params.roaster_id)
   let beanCollection = await Bean.findAll({
-    where: { roaster: roaster_id }
+    where: { roaster: roasterId }
   })
   res.send(beanCollection)
+}
+
+const GetBeanByRetailer = async (req, res) => {
+  let retailerId = parseInt(req.params.retailer_id)
+  let retailerCollection = await Bean.findAll({
+    where: { retailer: retailerId }
+  })
+  res.send(retailerCollection)
 }
 
 module.exports = {
@@ -60,5 +68,6 @@ module.exports = {
   GetOneBean,
   DeleteBean,
   PatchBean,
-  GetBeanByRoaster
+  GetBeanByRoaster,
+  GetBeanByRetailer
 }
