@@ -29,8 +29,13 @@ const GetOneBean = async (req, res) => {
   res.send(desiredBean)
 }
 
+const DeleteBean = async (req, res) => {
+  res.send('Delete route ends at the delete controller')
+}
+
 module.exports = {
   GetBeans,
   PostBean,
-  GetOneBean
+  GetOneBean,
+  DeleteBean
 }
