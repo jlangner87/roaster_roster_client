@@ -10,20 +10,23 @@ const GetBeans = async (req, res) => {
 }
 
 const PostBean = async (req, res) => {
-  res.send('Make a new bean here')
-  // try {
-  //   let beanDetails = {
-  //     ...req.body
-  //   }
-  //   let newBean = await Bean.create(beanDetails)
-  //   res.send(newBean)
-  // } catch (err) {
-  //   throw err
-  // }
+  try {
+    let beanDetails = {
+      ...req.body
+    }
+    let newBean = await Bean.create(beanDetails)
+    res.send(newBean)
+  } catch (err) {
+    throw err
+  }
 }
 
 const GetOneBean = async (req, res) => {
-  res.send('The get one bean route works')
+  let beanId = parseInt(req.params.beans_id)
+  let desiredBean = await Bean.findOne({
+    where: { id: beanId }
+  })
+  res.send(desiredBean)
 }
 
 module.exports = {
