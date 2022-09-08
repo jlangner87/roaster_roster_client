@@ -6,10 +6,7 @@ import axios from 'axios'
 
 const Beans = (props) => {
   useEffect(() => {
-    const listBeans = async () => {
-      // let res = await axios.get(`${BASE_URL}/api/beans/:bean_id`)
-      // console.log(res.data)
-    }
+    const listBeans = async () => {}
     listBeans()
   })
 

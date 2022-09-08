@@ -7,20 +7,24 @@ import { useState } from "react"
 
 const BeanProfile = () => {
 
-  const [profileState, setProfileState] =useState('')
+  let { beans_id } = useParams()
+  console.log(beans_id)  
+const [bean, setBean] =useState('')
 
-useEffect(() => {
+useEffect((props) => {
   const thisBean = async () => {
-    let response = await axios.get(`${BASE_URL}/api/beans/5}`)
+    let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
     console.log(response.data)
-    setProfileState(response.data)
+    setBean(response.data)
   }
   thisBean()
 }, [])
 
   return (
     <div className="baean_profile">
-      <h1></h1>
+      <h1>{bean.name}</h1>
+      <p>{bean.description}</p>
+      <img src={bean.image} alt='prodict image'/>
     </div>
   )
 }
