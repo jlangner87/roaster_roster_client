@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import RoasterHome from './pages/roasterHome'
 import Retailers from './pages/retailers'
 import UserForms from './components/UserForms'
+import BeanProfile from './components/BeanProfile'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/roasters" element={<Roasters />} />
         {/* <Route path="/roasters/collection/:id" element={<Roasters />} /> */}
         <Route path="/beans" element={<Beans />} />
-        {/* <Route path="/beans/:id" element={<Beans />} /> */}
+        <Route path="/beans/:id" element={<BeanProfile />} />
         <Route path="/retailers" element={<Retailers />} />
         {/* <Route path="/retailers/:id" element={<Retailers />} /> */}
         <Route path="/admin" element={<RoasterHome />} />
