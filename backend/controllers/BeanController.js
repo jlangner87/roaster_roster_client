@@ -47,7 +47,11 @@ const PatchBean = async (req, res) => {
 }
 
 const GetBeanByRoaster = async (req, res) => {
-  res.send(req.params.roaster_id)
+  let roaster_id = parseInt(req.params.roaster_id)
+  let beanCollection = await Bean.findAll({
+    where: { roaster: roaster_id }
+  })
+  res.send(beanCollection)
 }
 
 module.exports = {
