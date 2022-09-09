@@ -1,6 +1,5 @@
 import './App.css'
 import Home from './pages/home'
-import React, { useState } from 'react'
 import { Route, Routes, useParams } from 'react-router-dom'
 import Roasters from './pages/roasters'
 import Beans from './pages/beans'

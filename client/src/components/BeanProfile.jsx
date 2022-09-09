@@ -7,11 +7,10 @@ import { useState } from "react"
 
 const BeanProfile = () => {
 
-  let { beans_id } = useParams()
-  console.log(beans_id)  
-const [bean, setBean] =useState('')
+  let { beans_id } = useParams() 
+  const [bean, setBean] =useState('')
 
-useEffect((props) => {
+useEffect(() => {
   const thisBean = async () => {
     let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
     console.log(response.data)

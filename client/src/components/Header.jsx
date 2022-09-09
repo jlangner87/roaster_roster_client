@@ -1,10 +1,12 @@
 import Nav from './Nav'
+import logo from '../page_assets/logo.png'
 
 const Header = () => {
 
   return (
     <div className="header">
-      <h1>I AM A MASSIVE HEADER AT THE TOP OF THE PAGE!</h1>
+      <img className="logo" src={logo} />
+      <h3>connecting the world to coffee</h3>
       <Nav/>
     </div>
   )

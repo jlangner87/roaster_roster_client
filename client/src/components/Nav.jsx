@@ -4,8 +4,7 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <h4>This is the nav control. It will go somewhere</h4>
-      <h5>A dropdown box top right would be nice</h5>
+      <div className="link_container">
       <Link to='/' className="nav_link">Home</Link>
       <br />
       <Link to="/roasters" className="nav_link">Roasters</Link>
@@ -13,6 +12,7 @@ const Nav = () => {
       <Link to="/beans" className="nav_link">Beans</Link>
       <br/>
       <Link to='/retailers' className="nav_link">Retailers</Link>
+      </div>
     </div>
   )
 }
