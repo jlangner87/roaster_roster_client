@@ -71,6 +71,77 @@ const Organic = async (req, res) => {
   res.send(organics)
 }
 
+const DarkRoast = async (req, res) => {
+  let darks = await Bean.findAll({
+    where: {
+      roast: 'Dark'
+    }
+  })
+  res.send(darks)
+}
+
+const LightRoast = async (req, res) => {
+  let lights = await Bean.findAll({
+    where: {
+      roast: 'Light'
+    }
+  })
+  res.send(lights)
+}
+
+const BlondeRoast = async (req, res) => {
+  let blondes = await Bean.findAll({
+    where: {
+      roast: 'Blonde'
+    }
+  })
+  res.send(blondes)
+}
+
+const EspressoRoast = async (req, res) => {
+  let espressos = await Bean.findAll({
+    where: {
+      roast: 'Espresso'
+    }
+  })
+  res.send(espressos)
+}
+
+const WholeBean = async (req, res) => {
+  let bean = await Bean.findAll({
+    where: {
+      grind: 'Whole Bean'
+    }
+  })
+  res.send(bean)
+}
+
+const CourseGround = async (req, res) => {
+  let bean = await Bean.findAll({
+    where: {
+      grind: 'Coarse Grind'
+    }
+  })
+  res.send(bean)
+}
+
+const FineGround = async (req, res) => {
+  let bean = await Bean.findAll({
+    where: {
+      grind: 'Fine Grind'
+    }
+  })
+  res.send(bean)
+}
+
+const OriginCollections = async (req, res) => {
+  let originName = req.params.country
+  let OriginCollection = await Bean.findAll({
+    where: { origin: originName }
+  })
+  res.send(OriginCollection)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
@@ -79,5 +150,14 @@ module.exports = {
   PatchBean,
   GetBeanByRoaster,
   GetBeanByRetailer,
-  Organic
+  Organic,
+  DarkRoast,
+  LightRoast,
+  BlondeRoast,
+  EspressoRoast,
+  WholeBean,
+  CourseGround,
+  FineGround,
+  OriginCollections
+  // Decaf
 }
