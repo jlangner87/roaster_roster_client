@@ -9,16 +9,16 @@ const Collections = () => {
           Origin
         </a>
         <div class="dropdown-content">
-          <a href="/">Nicaragua</a>
-          <a href="/">Guatemala</a>
-          <a href="/">Mexico</a>
           <a href="/">Brazil</a>
           <a href="/">Colombia</a>
-          <a href="/">Sumatra</a>
-          <a href="/">Etheopia</a>
-          <a href="/">Kenya</a>
+          <a href="/">Guatemala</a>
           <a href="/">Hawaii</a>
+          <a href="/">India</a>
+          <a href="/">Kenya</a>
+          <a href="/">Mexico</a>
+          <a href="/">Niceragua</a>
           <a href="/">Peru</a>
+          <a href="/">Sumatra</a>
           <a href="/">Tanzania</a>
           <a href="/">Yamen</a>
           <a href="/">Other</a>
