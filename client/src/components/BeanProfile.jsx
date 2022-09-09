@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import axios from 'axios'
 import { useState } from "react"
+import UpdateDeleteBean from "./UpdateBean"
 
 const BeanProfile = () => {
 
@@ -13,7 +14,6 @@ const BeanProfile = () => {
 useEffect(() => {
   const thisBean = async () => {
     let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
-    console.log(response.data)
     setBean(response.data)
   }
   thisBean()
@@ -33,6 +33,7 @@ useEffect(() => {
       </a>
       <p>${bean.price}</p>
       <img className="bean-img" src={bean.image} alt='product image'/>
+      <UpdateDeleteBean/>
     </div>
   )
 }

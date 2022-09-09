@@ -2,37 +2,87 @@ const UpdateDeleteBean = () => {
 
   return (
     <div className="update_delete_bean">
+      <h1 className="page_header">Add New Beans </h1>
       <div className="bean_form_container">
-        <h1 className="form_header">Update A Bean</h1>
         <form className="bean_form">
           <label for="bean_name">Bean Name:</label><br/>
           <input id="bean_name" type="text" /><br/>
-          <label for="bean_origin"> Origin: </label><br/>
-          <input for="bean_origin" type="text"/><br/>
-          <br></br> 
-          <label>Bean Type:</label><br/>
-          <label for="whole_bean">Whole Bean:</label>
-          <input for="whole_bean" type="radio" /><br/>
-          <label for="ground">Ground:</label>
-          <input for="" type="radio" /><br/>
-          <label for="both">Both:</label>
-          <input for="both" type="radio" /><br/>
           <br></br>
-          <label>Organic:</label><br/>
-          <label for="organic"> True: </label>
-          <input for="organic" type="radio" /><br/>
-          <br></br>>
+
+          <label for="roaster_Id">Roaster ID:</label><br/>
+          <input id="roaster_Id" type="text" /><br/>
+          <br></br>
+
+          <label for="origin"> Origin: </label>
+          <select id="origin" name="origin">
+              <option value="Not Specified"></option>
+              <option value="Brazil">Brazil</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="India">India</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Peru">Peru</option>
+              <option value="Sumatra">Sumatra</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Yamen">Yamen</option>
+              <option value="Other">Other</option>
+          </select><br/>
+          <br></br>
+
+          <label for="roast">Roast Type:</label>
+          <select id="roast" name="roast">
+              <option value="Not Specified"></option>
+              <option value="Espresso">Espresso</option>
+              <option value="Dark">Dark Roast</option>
+              <option value="Light">Light Roast</option>
+              <option value="Blonde">Blonde Roast</option>
+          </select><br/>
+
+
+          <br></br>
+
+          <label for="grind">Grind Type:</label>
+          <select id="grind" name="grind">
+              <option value="Not Specified"></option>
+              <option value="Whole Bean">Whole Bean</option>
+              <option value="Coarse Grind">Coarse Grind</option>
+              <option value="Fine Grind">Fine Grind</option>
+          </select><br/>
+          <br></br>
+          <label for="organic">Organic:</label>
+          <select id="organic" name="organic">
+          <option value={false}></option>
+              <option value={true}>Organic</option>
+              <option value={false}>Non-Organic</option>
+
+          </select><br/>
+          <br></br>
+
           <label for="description"> Description: </label><br/>
           <textarea id="description" type="text"/><br/>
+          <br></br>
+
           <label for="price">Price:</label><br/>
           <input id="price" type="number"/><br/>
+          <br></br>
+
           <label for="buy_url">Purchase Link:</label><br/>
           <input id="buy_url" type="url"/><br/>
-          <label for="bean_image">Image Upload:</label><br/>
-          <input id="bean_image" type="file" /><br/>
-          <br/>
-          <button className="update">SUBMIT NEW BEAN</button>
-          <br/>
+          <br></br>
+
+          <label for="bean_image">Product Image URL:</label><br/>
+          <input id="bean_image" type="text" /><br/>
+          <br></br>
+
+          <label for="retailer_Id">Retailer ID:</label><br/>
+          <input id="retailer_Id" type="text" /><br/>
+          <br></br>
+
+          <button className="update">SUBMIT NEW BEAN</button><br/>
+          <br></br>
           <button className="delete">DELETE BEAN</button>
         </form>
         </div>
