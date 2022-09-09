@@ -7,8 +7,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import RoasterHome from './pages/roasterHome'
 import Retailers from './pages/retailers'
-import UserForms from './components/Future Components/UserForms'
 import BeanProfile from './components/BeanProfile'
+import RoasterCollection from './components/collections/Roaster'
 
 function App() {
   let { beans_id } = useParams()
@@ -20,11 +20,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/roasters" element={<Roasters />} />
-        {/* <Route path="/roasters/collection/:id" element={<Roasters />} /> */}
         <Route path="/beans" element={<Beans />} />
         <Route path="/beans/:beans_id" element={<BeanProfile />} />
+        <Route
+          path="/beans/roaster/:roaster_id"
+          element={<RoasterCollection />}
+        />
         <Route path="/retailers" element={<Retailers />} />
-        {/* <Route path="/retailers/:id" element={<Retailers />} /> */}
+
         <Route path="/admin" element={<RoasterHome />} />
       </Routes>
       <Footer />

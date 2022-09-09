@@ -2,7 +2,7 @@ const Collections = () => {
 
   return (
     <div className="collection_bar">
-    <h1>Browse Collections</h1>
+    <h1>Browse Bean Collections</h1>
     <ul>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown_link">
@@ -26,6 +26,19 @@ const Collections = () => {
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown_link">
+          Roast
+        </a>
+        <div class="dropdown-content">
+          <a href="/">Espresso Roast</a>
+          <a href="/">Dark Roast</a>
+          <a href="/">Medium Roast</a>
+          <a href="/">Light Roast</a>
+          <a href="/">Blonde Roast</a>
+          <a href="/">Other</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown_link">
           Grind
         </a>
         <div class="dropdown-content">
@@ -36,10 +49,13 @@ const Collections = () => {
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown_link">
-          Organic
+          Misc
         </a>
         <div class="dropdown-content">
           <a href="/">Organic</a>
+          <a href="/">Decaf</a>
+          <a href="/">Fair Trade</a>
+          <a href="/">Non-Profit</a>
         </div>
       </li>
       <li class="dropdown">
@@ -47,12 +63,12 @@ const Collections = () => {
           By Roaster
         </a>
         <div class="dropdown-content">
-          <a href="/">Stone Street</a>
-          <a href="/">Coffea Roasterie</a>
-          <a href="/">Fire Department Coffee</a>
-          <a href="/">Dark Matter Coffee</a>
-          <a href="/">Scout Finch</a>
-          <a href="/"></a>
+          <a href="/beans/roaster/1">Stone Street</a>
+          <a href="/beans/roaster/2">Coffea Roasterie</a>
+          <a href="/beans/roaster/3">Fire Department Coffee</a>
+          <a href="/beans/roaster/4">Dark Matter Coffee</a>
+          <a href="/beans/roaster/5">Scout Finch</a>
+          <a href="/beans/roaster/6">Stone Bru</a>
         </div>
       </li>
       <li class="dropdown">
