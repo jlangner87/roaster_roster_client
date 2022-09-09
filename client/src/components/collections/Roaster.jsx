@@ -9,6 +9,7 @@ const RoasterCollection = () => {
 
   let { roaster_id } = useParams() 
   const [beans, setBeans] =useState([{}])
+  const [roasters, setRoasters] =useState([{}])
 
 useEffect(() => {
   const thisBean = async () => {
@@ -19,9 +20,18 @@ useEffect(() => {
   thisBean()
 }, [])
 
+useEffect(() => {
+  const thisRoaster = async () => {
+    let response = await axios.get(`${BASE_URL}/api/roasters/${roaster_id}`)
+    setRoasters(response.data)
+    console.log(response.data)
+  }
+  thisRoaster()
+}, [])
+
   return (
     <div className="baean_profile">
-    <h1 className="page_header">Roaster Collection</h1>
+    <h1 className="page_header">The {roasters.name} Collection</h1>
     {beans.map((bean) => (
         <div className="bean_card">
           <h3 className="bean_name">{bean.name}</h3>
