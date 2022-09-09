@@ -17,10 +17,16 @@ const Beans = () => {
 
   return (
     <div className="baean_profile">
-      <p>all of the beans go here </p>
+      <h1 className="page_header">Browse all Beans </h1>
       {beans.map((bean) => (
-        <div>
-          <h1>{bean.name}</h1>
+        <div className="bean_card">
+          <h3 className="bean_name">{bean.name}</h3>
+          <h3 className="bean_detail">${bean.price}</h3>
+          <img className="product_pic" src={bean.image} />
+          <p className="bean_description">{bean.description}</p>
+          <a className="buy_link" href={bean.buy_link}>
+            <button>Buy Now</button>
+          </a>
         </div>
       ))}
     </div>

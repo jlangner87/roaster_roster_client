@@ -1,5 +1,3 @@
-import Nav from './Nav'
-
 const Collections = () => {
 
   return (
@@ -46,7 +44,7 @@ const Collections = () => {
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown_link">
-          Roaster Collections
+          By Roaster
         </a>
         <div class="dropdown-content">
           <a href="/">Stone Street</a>
@@ -59,7 +57,7 @@ const Collections = () => {
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown_link">
-          Retailer Collections
+          By Retailer
         </a>
         <div class="dropdown-content">
           <a href="/">Medlar Coffee Co</a>

@@ -18,6 +18,7 @@ html {
 }
 
 .nav {
+  border-top: 2px solid #012351;
 }
 
 .footer {
@@ -72,8 +73,9 @@ li {
 li a, .dropdown_link {
   display: inline-block;
   color: #F0F4DD;
+  font-size: 12px;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
 }
 
@@ -98,6 +100,7 @@ li.dropdown {
   color: #012351;
   padding: 12px 16px;
   text-decoration: none;
+  font-size: 12px;
   display: block;
   text-align: left;
 }
@@ -109,7 +112,36 @@ li.dropdown {
 }
 
 .collection_bar {
-  background-color: #4d3019;
   margin: 0;
   padding: 5px;
+}
+
+
+.product_pic {
+  width: 175px;
+}
+
+.page_header {
+  color: #d4d7c1;
+}
+
+.bean_name {
+  color: #d4d7c1;
+  margin-top: 40px;
+}
+
+.bean_description {
+  color: #d4d7c1;
+  font-size: 12px;
+}
+
+.bean_detail {
+  color: #d4d7c1;
+  font-size: 14px;
+}
+
+.buy_link {
+  color: #d4d7c1;
+  font-size: 12px;
+  width: 200px;
 }

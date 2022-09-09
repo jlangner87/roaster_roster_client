@@ -4,7 +4,7 @@ import Collections from '../components/Collections'
 const Home = () => {
   return (
     <div className="home">
-      <Collections />
+      <p>About this site</p>
     </div>
   )
 }
