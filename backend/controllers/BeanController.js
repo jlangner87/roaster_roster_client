@@ -2,7 +2,7 @@ const { Bean } = require('../models')
 
 const GetBeans = async (req, res) => {
   try {
-    const all = Bean.findAll()
+    const all = await Bean.findAll()
     res.send(all)
   } catch (err) {
     throw err

@@ -1,7 +1,9 @@
-const { Rosater } = require('../models')
+const { Roaster } = require('../models')
 
 const GetRoasters = async (req, res) => {
-  res.send('get roasters works')
+  let all = await Roaster.findAll()
+  // console.log(organics)
+  res.send(all)
 }
 
 module.exports = {
