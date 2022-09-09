@@ -33,7 +33,7 @@ useEffect((props) => {
         <button>Buy Now</button>
       </a>
       <p>${bean.price}</p>
-      <img src={bean.image} alt='product image'/>
+      <img className="bean-img" src={bean.image} alt='product image'/>
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import Login from "./login"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
@@ -14,8 +13,6 @@ const Nav = () => {
       <Link to="/beans" className="nav_link">Beans</Link>
       <br/>
       <Link to='/retailers' className="nav_link">Retailers</Link>
-      <br/>
-      <Login/>
     </div>
   )
 }

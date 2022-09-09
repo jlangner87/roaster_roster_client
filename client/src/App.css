@@ -3,6 +3,11 @@ html {
   color: white;
   text-align: center;
 }
+.bean-img {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+}
 
 .header {
   background-color: blue;

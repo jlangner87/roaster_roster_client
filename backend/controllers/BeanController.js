@@ -62,6 +62,15 @@ const GetBeanByRetailer = async (req, res) => {
   res.send(retailerCollection)
 }
 
+const Organic = async (req, res) => {
+  let organics = await Bean.findAll({
+    where: {
+      organic: true
+    }
+  })
+  res.send(organics)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
@@ -69,5 +78,6 @@ module.exports = {
   DeleteBean,
   PatchBean,
   GetBeanByRoaster,
-  GetBeanByRetailer
+  GetBeanByRetailer,
+  Organic
 }
