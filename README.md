@@ -50,8 +50,10 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 - Tailwind
 - HTML
 - React.JS
-- Python
-- Django
+- PostgresSQL
+- Express
+- Python (Used in early iterations. Not deployed with final version)
+- Django (Used in early iterations. Not deployed with final version)
 
 #### API Project Files [Repo](https://github.com/jlangner87/roaster_roster)
 
@@ -104,4 +106,6 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 
 ### _Credits & Citations_
 
-##### thing to cite [Name](url)
+##### useParams Docs [Remix_reactrouter.com](https://v5.reactrouter.com/web/api/Hooks/useparams)
+
+##### CSS Dropdown Menu [W3Schools](https://www.w3schools.com/css/css_dropdowns.asp)
