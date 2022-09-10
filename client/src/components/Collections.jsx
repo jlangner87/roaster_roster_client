@@ -1,3 +1,9 @@
+import { BASE_URL } from "../globals"
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+
 const Collections = () => {
 
   return (
@@ -9,19 +15,20 @@ const Collections = () => {
           Origin
         </a>
         <div class="dropdown-content">
-          <a href="/">Brazil</a>
-          <a href="/">Colombia</a>
-          <a href="/">Guatemala</a>
-          <a href="/">Hawaii</a>
-          <a href="/">India</a>
-          <a href="/">Kenya</a>
-          <a href="/">Mexico</a>
-          <a href="/">Niceragua</a>
-          <a href="/">Peru</a>
-          <a href="/">Sumatra</a>
-          <a href="/">Tanzania</a>
-          <a href="/">Yamen</a>
-          <a href="/">Other</a>
+          <a href="/beans/origin/Brazil">Brazil</a>
+          <a href="/beans/origin/Colombia">Colombia</a>
+          <a href="/beans/origin/Guatemala">Guatemala</a>
+          <a href="/beans/origin/Hawaii">Hawaii</a>
+          <a href="/beans/origin/India">India</a>
+          <a href="/beans/origin/Indonesia">Indonesia</a>
+          <a href="/beans/origin/Kenya">Kenya</a>
+          <a href="/beans/origin/Mexico">Mexico</a>
+          <a href="/beans/origin/Niceragua">Niceragua</a>
+          <a href="/beans/origin/Peru">Peru</a>
+          <a href="/beans/origin/Sumatra">Sumatra</a>
+          <a href="/beans/origin/Tanzania">Tanzania</a>
+          <a href="/beans/origin/Yamen">Yamen</a>
+          <a href="/beans/origin/Other">Other</a>
         </div>
       </li>
       <li class="dropdown">

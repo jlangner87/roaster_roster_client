@@ -9,11 +9,9 @@ import RoasterHome from './pages/roasterHome'
 import Retailers from './pages/retailers'
 import BeanProfile from './components/BeanProfile'
 import RoasterCollection from './components/collections/Roaster'
+import OriginCollection from './components/collections/Origin'
 
 function App() {
-  let { beans_id } = useParams()
-  console.log(beans_id)
-
   return (
     <div className="App">
       <Header />
@@ -26,6 +24,7 @@ function App() {
           path="/beans/roaster/:roaster_id"
           element={<RoasterCollection />}
         />
+        <Route path="/beans/origin/:origin" element={<OriginCollection />} />
         <Route path="/retailers" element={<Retailers />} />
 
         <Route path="/admin" element={<RoasterHome />} />
