@@ -10,7 +10,6 @@ const OriginCollection = () => {
   useEffect(() => {
     const listBeans = async () => {
       let res = await axios.get(`${BASE_URL}/api/beans/collection/origin/${origin}`)
-      console.log(origin)
       setBeans(res.data)
     }
     listBeans()
@@ -18,7 +17,7 @@ const OriginCollection = () => {
 
   return (
     <div className="bean_profile">
-      <h1 className="page_header">Browse all Beans from {beans.origin} </h1>
+      <h1 className="page_header">Browse all Beans from {origin} </h1>
       {beans.map((bean) => (
         <div className="bean_card">
           <h3 className="bean_name">{bean.name}</h3>

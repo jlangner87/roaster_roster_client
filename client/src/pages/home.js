@@ -1,5 +1,5 @@
 import '../App.css'
-import Collections from '../components/Collections'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -37,6 +37,8 @@ const Home = () => {
         Proin libero nunc consequat interdum. Etiam sit amet nisl purus in
         mollis nunc sed. Non blandit massa enim nec dui nunc mattis enim.
       </p>
+      <br></br>
+      <Link to="/admin">Roaster Controls</Link>
     </div>
   )
 }

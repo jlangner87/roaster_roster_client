@@ -23,7 +23,7 @@ const Collections = () => {
           <a href="/beans/origin/Indonesia">Indonesia</a>
           <a href="/beans/origin/Kenya">Kenya</a>
           <a href="/beans/origin/Mexico">Mexico</a>
-          <a href="/beans/origin/Niceragua">Niceragua</a>
+          <a href="/beans/origin/Nicaragua">Nicaragua</a>
           <a href="/beans/origin/Peru">Peru</a>
           <a href="/beans/origin/Sumatra">Sumatra</a>
           <a href="/beans/origin/Tanzania">Tanzania</a>
@@ -36,12 +36,12 @@ const Collections = () => {
           Roast
         </a>
         <div class="dropdown-content">
-          <a href="/">Espresso Roast</a>
-          <a href="/">Dark Roast</a>
-          <a href="/">Medium Roast</a>
-          <a href="/">Light Roast</a>
-          <a href="/">Blonde Roast</a>
-          <a href="/">Other</a>
+          <a href="/roast/Espresso">Espresso Roast</a>
+          <a href="/roast/Dark">Dark Roast</a>
+          <a href="/roast/Medium">Medium Roast</a>
+          <a href="/roast/Light">Light Roast</a>
+          <a href="/roast/Blonde">Blonde Roast</a>
+          <a href="/roast/Other">Other</a>
         </div>
       </li>
       <li class="dropdown">

@@ -27,9 +27,9 @@ html {
 }
 
 .footer {
-  background-color: #F0F4DD;
-  color: #012351;
-  position: fixed;
+  background-color: #012351;
+  color: #F0F4DD;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -38,6 +38,7 @@ html {
 .home {
   background-color: #012351;
   color: #F0F4DD;
+  margin-bottom: 100px;
 }
 
 a {
@@ -153,5 +154,15 @@ li.dropdown {
   color:#012351;
   margin-bottom: 100px;
   padding-bottom: 20px;
+}
+
+.mylogo {
+  width: 200px;
+}
+
+.copyright {
+  font-size: 10px;
+  margin-top: -15px;
+
 }
 

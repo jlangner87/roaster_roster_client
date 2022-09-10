@@ -10,6 +10,7 @@ import Retailers from './pages/retailers'
 import BeanProfile from './components/BeanProfile'
 import RoasterCollection from './components/collections/Roaster'
 import OriginCollection from './components/collections/Origin'
+import RoastCollection from './components/collections/Roast'
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         />
         <Route path="/beans/origin/:origin" element={<OriginCollection />} />
         <Route path="/retailers" element={<Retailers />} />
-
+        <Route path="/roast/:roast_id" element={<RoastCollection />} />
         <Route path="/admin" element={<RoasterHome />} />
       </Routes>
       <Footer />
