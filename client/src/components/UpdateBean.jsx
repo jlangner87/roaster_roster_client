@@ -1,4 +1,20 @@
+import { BASE_URL } from "../globals"
+import { useEffect, useState } from 'react'
+import { Link, Navigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+
 const UpdateDeleteBean = () => {
+let {beans_id} = useParams()
+let navigate = useNavigate()
+const [beans, setBeans] =useState('')
+
+const deleteBean = async () => {
+    let res = await axios.delete(`${BASE_URL}/api/beans/${beans_id}`)
+    alert(`You have deleted this bean. Taking you back to all beans.`)
+    navigate(-1)
+  }
+
 
   return (
     <div className="update_delete_bean">
@@ -83,7 +99,7 @@ const UpdateDeleteBean = () => {
 
           <button className="update">SUBMIT NEW BEAN</button><br/>
           <br></br>
-          <button className="delete">DELETE BEAN</button>
+          <button onClick={deleteBean} className="delete">DELETE BEAN</button>
         </form>
         </div>
     </div>
