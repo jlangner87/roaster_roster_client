@@ -18,12 +18,11 @@ const BeanForm = () => {
     price: Number,
     retailer: Number
   }
-  
+
   const [formState, setFormState]= useState(initialState)
 
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
-
   }
 
   const handleSubmit = async (event) => {

@@ -8,7 +8,18 @@ const UpdateDeleteBean = () => {
 
 let {beans_id} = useParams()
 let navigate = useNavigate()
-const [beans, setBeans] =useState('')
+const [bean, setBean] =useState('')
+
+useEffect(() => {
+  const thisBean = async () => {
+    let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
+    setBean(response.data)
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  }
+  thisBean()
+}, [])
+
+
 
 let initialState = {
   name: '',
@@ -49,11 +60,11 @@ const updateBean = async () => {
       <div className="bean_form_container">
       <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>
-          <input onChange={handleChange} value={formState.name} id="name" type="text" /><br/>
+          <input onChange={handleChange} value={formState.name} id="name" type="text" placeholder={bean.name}/><br/>
           <br></br>
 
           <label for="roaster">Roaster ID:</label><br/>
-          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" /><br/>
+          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" placeholder={bean.roaster}/><br/>
           <br></br>
 
           <label for="origin"> Origin: </label>
@@ -106,23 +117,23 @@ const updateBean = async () => {
           <br></br>
 
           <label for="description"> Description: </label><br/>
-          <textarea onChange={handleChange} value={formState.description} id="description" type="text"/><br/>
+          <textarea onChange={handleChange} value={formState.description} id="description" type="text" placeholder={bean.description}/><br/>
           <br></br>
 
           <label for="price">Price:</label><br/>
-          <input onChange={handleChange} value={formState.price} id="price" type="number"/><br/>
+          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder={bean.price}/><br/>
           <br></br>
 
           <label for="buy_link">Purchase Link:</label><br/>
-          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text"/><br/>
+          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text" placeholder={bean.buy_link}/><br/>
           <br></br>
 
           <label for="image">Product Image URL:</label><br/>
-          <input onChange={handleChange} value={formState.image} id="image" type="text" /><br/>
+          <input onChange={handleChange} value={formState.image} id="image" type="text" placeholder={bean.image}/><br/>
           <br></br>
 
           <label for="retailer">Retailer ID:</label><br/>
-          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" /><br/>
+          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" placeholder={bean.retailer}/><br/>
           <br></br>
 
           <button type="submit" className="update">SUBMIT</button><br/>
