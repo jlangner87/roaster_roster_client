@@ -9,8 +9,8 @@ const Beans = () => {
   useEffect(() => {
     const listBeans = async () => {
       let res = await axios.get(`${BASE_URL}/api/beans/all`)
-      console.log(res.data)
       setBeans(res.data)
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
     listBeans()
   }, [])

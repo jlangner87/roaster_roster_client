@@ -18,7 +18,7 @@ const deleteBean = async () => {
 
   return (
     <div className="update_delete_bean">
-      <h1 className="page_header">Add New Beans </h1>
+      <h1 className="page_header">Update This Bean</h1>
       <div className="bean_form_container">
         <form className="bean_form">
           <label for="bean_name">Bean Name:</label><br/>
@@ -97,7 +97,7 @@ const deleteBean = async () => {
           <input id="retailer_Id" type="text" /><br/>
           <br></br>
 
-          <button className="update">SUBMIT NEW BEAN</button><br/>
+          <button className="update">Update Bean</button><br/>
           <br></br>
           <button onClick={deleteBean} className="delete">DELETE BEAN</button>
         </form>

@@ -9,8 +9,8 @@ const Retailers = () => {
   useEffect(() => {
     const listRetailers = async () => {
       let res = await axios.get(`${BASE_URL}/api/retailers/all`)
-      console.log(res.data)
       setRetailers(res.data)
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
     listRetailers()
   }, [])

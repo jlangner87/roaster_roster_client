@@ -10,6 +10,7 @@ const Roasters = () => {
     const listRoasters = async () => {
       let res = await axios.get(`${BASE_URL}/api/roasters/all`)
       setRoasters(res.data)
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
     listRoasters()
   }, [])
