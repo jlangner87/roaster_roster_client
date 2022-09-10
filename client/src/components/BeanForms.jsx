@@ -18,8 +18,7 @@ const BeanForm = () => {
     price: Number,
     retailer: Number
   }
-
-  const [bean, setBean] = useState({})
+  
   const [formState, setFormState]= useState(initialState)
 
   const handleChange = (event) => {
