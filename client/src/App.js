@@ -11,6 +11,7 @@ import BeanProfile from './components/BeanProfile'
 import RoasterCollection from './components/collections/Roaster'
 import OriginCollection from './components/collections/Origin'
 import RoastCollection from './components/collections/Roast'
+import GrindCollection from './components/collections/Grind'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/beans/origin/:origin" element={<OriginCollection />} />
         <Route path="/retailers" element={<Retailers />} />
         <Route path="/roast/:roast_id" element={<RoastCollection />} />
+        <Route path="/grind/:grind_id" element={<GrindCollection />} />
         <Route path="/admin" element={<RoasterHome />} />
       </Routes>
       <Footer />

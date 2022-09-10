@@ -49,9 +49,9 @@ const Collections = () => {
           Grind
         </a>
         <div class="dropdown-content">
-          <a href="/">Whole Bean</a>
-          <a href="/">Coarse Grind</a>
-          <a href="/">Fine Grind</a>
+          <a href="/grind/Wholebean">Whole Bean</a>
+          <a href="/grind/Coarse">Coarse Grind</a>
+          <a href="/grind/Fine">Fine Grind</a>
         </div>
       </li>
       <li class="dropdown">
