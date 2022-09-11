@@ -8,7 +8,7 @@
 
 ---
 
-#### Deployed Application [Name] (URL here)
+#### Deployed Application [Name] (URL here ... ... ...)
 
 ---
 
