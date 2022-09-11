@@ -1,70 +1,58 @@
 import { BASE_URL } from "../globals"
-import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import { useState, UseEffect, useEffect } from "react"
+import {useNavigate, useParams} from "react-router-dom"
+import axios from "axios"
 
 const UpdateDeleteBean = () => {
-
-
-let {beans_id} = useParams()
-let navigate = useNavigate()
-const [bean, setBean] =useState('')
-
-useEffect(() => {
-  const thisBean = async () => {
-    let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
-    setBean(response.data)
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  let navigate = useNavigate()
+  let {beans_id} = useParams()
+  let [beans, setBeans] = useState()
+  let initialState = {
+    name: '',
+    roaster: Number,
+    origin: '',
+    grind: '',
+    roast: '',
+    description: '',
+    organic: Boolean,
+    buy_link: '',
+    image: '',
+    price: Number,
+    retailer: Number
   }
-  thisBean()
-}, [])
 
+  const [formState, setFormState]= useState(initialState)
 
-
-let initialState = {
-  name: '',
-  roaster: Number,
-  origin: '',
-  grind: '',
-  roast: '',
-  description: '',
-  organic: Boolean,
-  buy_link: '',
-  image: '',
-  price: Number,
-  retailer: Number
-}
-
-const [formState, setFormState]= useState(initialState)
-
-const handleChange = (event) => {
-  setFormState({ ...formState, [event.target.id]: event.target.value })
-}
-
-const handleSubmit = async (event) => {
-  event.preventDefault()
-  let res = await axios.post(`${BASE_URL}/api/beans/add`, formState)
-  setFormState(initialState)
-  navigate(0)
-}
-
-const updateBean = async () => {
-    let res = await axios.patch(`${BASE_URL}/api/beans/${beans_id}`)
-    alert(`You have updated this bean.`)
-    navigate(-1)
+  const handleChange = (event) => {
+    setFormState({ ...formState, [event.target.id]: event.target.value })
   }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    let res = await axios.put(`${BASE_URL}/api/beans/${beans_id}`, formState)
+    setFormState(initialState)
+    alert(`Beans with id ${beans_id} was updated.`)
+    navigate('/beans')
+  }
+
+  const deleteBean = async (event) => {
+    let res = await axios.delete(`${BASE_URL}/api/beans/${beans_id}`)
+    alert(`You have deleted bean with bean id ${beans_id}`)
+    navigate(0)
+  }
+
 
   return (
-    <div className="update_delete_bean">
-      <h1 className="page_header">Update This Bean</h1>
+    <div className="new_bean_form">
+      <h1 className="page_header">Add New Beans </h1>
       <div className="bean_form_container">
-      <form onSubmit={handleSubmit} className="bean_form">
+        <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>
-          <input onChange={handleChange} value={formState.name} id="name" type="text" placeholder={bean.name}/><br/>
+          <input onChange={handleChange} value={formState.name} id="name" type="text" /><br/>
           <br></br>
 
           <label for="roaster">Roaster ID:</label><br/>
-          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" placeholder={bean.roaster}/><br/>
+          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" /><br/>
           <br></br>
 
           <label for="origin"> Origin: </label>
@@ -117,30 +105,28 @@ const updateBean = async () => {
           <br></br>
 
           <label for="description"> Description: </label><br/>
-          <textarea onChange={handleChange} value={formState.description} id="description" type="text" placeholder={bean.description}/><br/>
+          <textarea onChange={handleChange} value={formState.description} id="description" type="text"/><br/>
           <br></br>
 
           <label for="price">Price:</label><br/>
-          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder={bean.price}/><br/>
+          <input onChange={handleChange} value={formState.price} id="price" type="number"/><br/>
           <br></br>
 
           <label for="buy_link">Purchase Link:</label><br/>
-          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text" placeholder={bean.buy_link}/><br/>
+          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text"/><br/>
           <br></br>
 
           <label for="image">Product Image URL:</label><br/>
-          <input onChange={handleChange} value={formState.image} id="image" type="text" placeholder={bean.image}/><br/>
+          <input onChange={handleChange} value={formState.image} id="image" type="text" /><br/>
           <br></br>
 
           <label for="retailer">Retailer ID:</label><br/>
-          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" placeholder={bean.retailer}/><br/>
+          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" /><br/>
           <br></br>
 
-          <button type="submit" className="update">SUBMIT</button><br/>
-          <br></br>
-          <button onClick={updateBean} className="delete">DELETE BEAN</button>
+          <button type="submit" className="update">SUBMIT</button>
         </form>
-        </div>
+      </div>
     </div>
   )
 }
