@@ -11,10 +11,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.listen(PORT, () => {
-  console.log(`🚨Express is brewing on ${PORT}🚨`)
+  console.log(`🚨Express is brewing on http://localhost:${PORT}🚨`)
 })
 
 app.use('/api', APIRouter)
 app.get('/', (req, res) => {
-  res.send(`Express is brewing here ☕️`)
+  res.send(`Express is brewing wiki-coffee-api here ☕️`)
 })
