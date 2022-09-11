@@ -62,11 +62,11 @@ const UpdateDeleteBean = () => {
       <div className="bean_form_container">
         <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>
-          <input onChange={handleChange} value={formState.name} id="name" type="text" /><br/>
+          <input onChange={handleChange} value={formState.name} id="name" type="text" placeholder={bean.name} /><br/>
           <br></br>
 
           <label for="roaster">Roaster ID:</label><br/>
-          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" /><br/>
+          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" placeholder={bean.roaster}/><br/>
           <br></br>
 
           <label for="origin"> Origin: </label>
@@ -119,23 +119,26 @@ const UpdateDeleteBean = () => {
           <br></br>
 
           <label for="description"> Description: </label><br/>
-          <textarea onChange={handleChange} value={formState.description} id="description" type="text"/><br/>
+          <textarea onChange={handleChange} value={formState.description} id="description" type="text" placeholder={bean.description}/><br/>
           <br></br>
 
           <label for="price">Price:</label><br/>
-          <input onChange={handleChange} value={formState.price} id="price" type="number"/><br/>
+          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder='(no $ symbols)'/><br/>
+          <p className="notation">Please leave out any currency symbols such as $ € ¥ etc.</p>
           <br></br>
 
           <label for="buy_link">Purchase Link:</label><br/>
-          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text"/><br/>
+          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text" placeholder={bean.buy_link}/><br/>
+          <p className="notation">please incude the full url</p>
           <br></br>
 
           <label for="image">Product Image URL:</label><br/>
-          <input onChange={handleChange} value={formState.image} id="image" type="text" /><br/>
+          <input onChange={handleChange} value={formState.image} id="image" type="text" placeholder='www.site.com'placeholder={bean.image}/><br/>
+          <p className="notation">please incude the full url</p>
           <br></br>
 
           <label for="retailer">Retailer ID:</label><br/>
-          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" /><br/>
+          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" placeholder={bean.retailer}/><br/>
           <br></br>
 
           <button type="submit" className="update">SUBMIT</button>

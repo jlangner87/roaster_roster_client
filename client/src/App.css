@@ -173,3 +173,9 @@ li.dropdown {
   align-content: center; 
   float: left;
 }
+
+.notation {
+  font-size: 12px;
+  margin-top: 1px;
+  font-style: italic;
+}

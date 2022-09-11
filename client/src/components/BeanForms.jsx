@@ -18,7 +18,7 @@ const BeanForm = () => {
     price: Number,
     retailer: Number
   }
-
+  
   const [formState, setFormState]= useState(initialState)
 
   const handleChange = (event) => {
@@ -39,11 +39,11 @@ const BeanForm = () => {
       <div className="bean_form_container">
         <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>
-          <input onChange={handleChange} value={formState.name} id="name" type="text" /><br/>
+          <input onChange={handleChange} value={formState.name} id="name" type="text" placeholder="roasterie name here..."/><br/>
           <br></br>
 
           <label for="roaster">Roaster ID:</label><br/>
-          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" /><br/>
+          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" placeholder="unique roaster key here"/><br/>
           <br></br>
 
           <label for="origin"> Origin: </label>
@@ -66,7 +66,7 @@ const BeanForm = () => {
           <br></br>
 
           <label for="roast">Roast Type:</label>
-          <select onChange={handleChange} value={formState.roast} id="roast" name="roast">
+          <select onChange={handleChange} value={formState.roast} id="roast">
               <option value="Not Specified"></option>
               <option value="Espresso">Espresso</option>
               <option value="Dark">Dark Roast</option>
@@ -96,19 +96,21 @@ const BeanForm = () => {
           <br></br>
 
           <label for="description"> Description: </label><br/>
-          <textarea onChange={handleChange} value={formState.description} id="description" type="text"/><br/>
-          <br></br>
+          <textarea onChange={handleChange} value={formState.description} id="description" type="text" placeholder='description here...'/>
 
           <label for="price">Price:</label><br/>
-          <input onChange={handleChange} value={formState.price} id="price" type="number"/><br/>
+          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder='(no $ symbols)'/><br/>
+          <p className="notation">Please leave out any currency symbols such as $ € ¥ etc.</p>
           <br></br>
 
           <label for="buy_link">Purchase Link:</label><br/>
-          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text"/><br/>
+          <input onChange={handleChange} value={formState.buy_link} id="buy_link" placeholder='www.site.com' type="text"/><br/>
+          <p className="notation">please incude the full url</p>
           <br></br>
 
           <label for="image">Product Image URL:</label><br/>
-          <input onChange={handleChange} value={formState.image} id="image" type="text" /><br/>
+          <input onChange={handleChange} value={formState.image} id="image" type="text" placeholder='www.site.com'/><br/>
+          <p className="notation">please incude the full url</p>
           <br></br>
 
           <label for="retailer">Retailer ID:</label><br/>
