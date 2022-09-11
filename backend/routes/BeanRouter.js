@@ -18,6 +18,6 @@ Router.get('/collection/origin/:country', controller.OriginCollections)
 //CREATE, UPDATE, DELETE
 Router.post('/add', controller.PostBean)
 Router.delete('/:beans_id', controller.DeleteBean)
-Router.put('/:beans_id', controller.PatchBean)
+Router.patch('/:beans_id', controller.PatchBean)
 
 module.exports = Router

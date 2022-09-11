@@ -6,7 +6,19 @@ import axios from "axios"
 const UpdateDeleteBean = () => {
   let navigate = useNavigate()
   let {beans_id} = useParams()
-  let [beans, setBeans] = useState()
+  let [bean, setBean] = useState()
+
+
+  useEffect(() => {
+    const thisBean = async () => {
+      let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
+      setBean(response.data)
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+      console.log({bean})
+    }
+    thisBean()
+  }, [])
+
   let initialState = {
     name: '',
     roaster: Number,
@@ -29,16 +41,18 @@ const UpdateDeleteBean = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    let res = await axios.put(`${BASE_URL}/api/beans/${beans_id}`, formState)
+    let res = await axios.patch(`${BASE_URL}/api/beans/${beans_id}`, formState)
     setFormState(initialState)
     alert(`Beans with id ${beans_id} was updated.`)
-    navigate('/beans')
+    navigate(0)
   }
+
+
 
   const deleteBean = async (event) => {
     let res = await axios.delete(`${BASE_URL}/api/beans/${beans_id}`)
     alert(`You have deleted bean with bean id ${beans_id}`)
-    navigate(0)
+    navigate('/beans')
   }
 
 
@@ -126,6 +140,7 @@ const UpdateDeleteBean = () => {
 
           <button type="submit" className="update">SUBMIT</button>
         </form>
+        <button className="delete" onClick={deleteBean}>DELETE</button>
       </div>
     </div>
   )

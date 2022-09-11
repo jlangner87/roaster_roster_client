@@ -89,8 +89,8 @@ const BeanForm = () => {
           <label for="organic">Organic:</label>
           <select onChange={handleChange} value={formState.organic} id="organic" name="organic">
           <option value={formState.grind}></option>
-              {/* <option value={true}>Organic</option> */}
-              {/* <option value={false}>Non-Organic</option> */}
+              <option value={true}>Organic</option>
+              <option value={false}>Non-Organic</option>
 
           </select><br/>
           <br></br>
