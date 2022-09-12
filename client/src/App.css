@@ -1,6 +1,7 @@
 html {
   background-color: #1b383e;
   scroll-behavior: smooth;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .bean-img {
@@ -333,4 +334,13 @@ form {
 
 .bean_container a:visited {
   color: #1b383e;
+}
+
+.collection_header {
+  margin-top: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a06c38;
+  font-family: 'Lato', sans-serif;
+
 }

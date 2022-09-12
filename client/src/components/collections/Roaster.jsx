@@ -30,8 +30,8 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="baean_profile">
-    <h1 className="page_header">The {roasters.name} Collection</h1>
+    <div className="brewer_profile">
+    <h1 className="collection_header">The {roasters.name} Collection</h1>
     {beans.map((bean) => (
         <div className="bean_card">
           <Link to={`/beans/${bean.id}`}>
