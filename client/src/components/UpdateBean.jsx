@@ -13,7 +13,7 @@ const UpdateDeleteBean = () => {
     const thisBean = async () => {
       let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
       setBean(response.data)
-      window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+      // window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
       console.log({bean})
     }
     thisBean()
@@ -62,11 +62,11 @@ const UpdateDeleteBean = () => {
       <div className="bean_form_container">
         <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>
-          <input onChange={handleChange} value={formState.name} id="name" type="text" /><br/>
+          <input onChange={handleChange} value={formState.name} id="name" type="text" placeholder="Bean Name"/><br/>
           <br></br>
 
           <label for="roaster">Roaster ID:</label><br/>
-          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number"/><br/>
+          <input onChange={handleChange} value={formState.roaster} id="roaster" type="number" placeholder="Roaster ID"/><br/>
           <br></br>
 
           <label for="origin"> Origin: </label>
@@ -119,26 +119,26 @@ const UpdateDeleteBean = () => {
           <br></br>
 
           <label for="description"> Description: </label><br/>
-          <textarea onChange={handleChange} value={formState.description} id="description" type="text"/><br/>
+          <textarea onChange={handleChange} value={formState.description} id="description" type="text" placeholder="Descripton"/><br/>
           <br></br>
 
           <label for="price">Price:</label><br/>
-          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder='(no $ symbols)'/><br/>
-          <p className="notation">Please leave out any currency symbols such as $ € ¥ etc.</p>
+          <input onChange={handleChange} value={formState.price} id="price" type="number" placeholder='Price (0.00)'/><br/>
+          <p className="notation">Do not include currency symbols ($ € ¥ etc.)</p>
           <br></br>
 
           <label for="buy_link">Purchase Link:</label><br/>
-          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text"/><br/>
-          <p className="notation">please incude the full url</p>
+          <input onChange={handleChange} value={formState.buy_link} id="buy_link" type="text" placeholder="Product Link"/><br/>
+          <p className="notation">Incude full url</p>
           <br></br>
 
           <label for="image">Product Image URL:</label><br/>
-          <input onChange={handleChange} value={formState.image} id="image" type="text"/><br/>
-          <p className="notation">please incude the full url</p>
+          <input onChange={handleChange} value={formState.image} id="image" type="text" placeholder="Product Image URL"/><br/>
+          <p className="notation">Incude full url</p>
           <br></br>
 
           <label for="retailer">Retailer ID:</label><br/>
-          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number"/><br/>
+          <input onChange={handleChange} value={formState.retailer} id="retailer" type="number" placeholder="Retailer ID"/><br/>
           <br></br>
 
           <button type="submit" className="update">SUBMIT</button>
