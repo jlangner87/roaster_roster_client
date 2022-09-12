@@ -15,11 +15,16 @@ const Beans = () => {
     listBeans()
   }, [])
 
+  const toTop = (event) => {}
+
   return (
     <div className="baean_profile">
       <h1 className="page_header">Browse all Beans </h1>
       {beans.map((bean) => (
         <div className="bean_card">
+          <button onClick={toTop()} className="toTop">
+            🔝
+          </button>
           <Link to={`/beans/${bean.id}`}>
             <h3 className="bean_name">{bean.name}</h3>
             <h3 className="bean_detail">${bean.price}</h3>
