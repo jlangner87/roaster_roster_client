@@ -18,7 +18,7 @@ const Beans = () => {
   const toTop = (event) => {}
 
   return (
-    <div className="baean_profile">
+    <div className="brewer_profile">
       <h1 className="page_header">Browse all Beans </h1>
       {beans.map((bean) => (
         <div className="bean_card">

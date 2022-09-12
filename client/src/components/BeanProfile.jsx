@@ -25,7 +25,7 @@ const goBack = () => {
 }
 
   return (
-    <div className="baean_profile">
+    <div className="profile">
       <button onClick={goBack} className="back">🔙</button>
       <h1>{bean.name}</h1>
       <p>Roasted by: {bean.roaster}</p>

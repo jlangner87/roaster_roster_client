@@ -10,12 +10,11 @@ const Retailers = () => {
     const listRetailers = async () => {
       let res = await axios.get(`${BASE_URL}/api/retailers/all`)
       setRetailers(res.data)
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
     listRetailers()
   }, [])
   return (
-    <div className="retailer_profile">
+    <div className="brewer_profile">
       <h1 className="page_header">Browse all Retailers </h1>
       {retailers.map((retailer) => (
         <div className="bean_card">

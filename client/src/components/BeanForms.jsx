@@ -68,7 +68,7 @@ const BeanForm = () => {
           <label for="roast">Roast:</label>
           <select onChange={handleChange} value={formState.roast} id="roast">
               <option value="Not Specified" > Roast </option>
-              <option value="Espresso">Espresso</option>
+              <option value="Espresso"></option>
               <option value="Dark">Dark Roast</option>
               <option value="Light">Light Roast</option>
               <option value="Blonde">Blonde Roast</option>
@@ -79,7 +79,7 @@ const BeanForm = () => {
 
           <label for="grind">Grind:</label>
           <select onChange={handleChange} value={formState.grind} id="grind" name="grind">
-              <option value="Not Specified"> Grind </option>
+              <option value="Not Specified"></option>
               <option value="Whole Bean">Whole Bean</option>
               <option value="Coarse Grind">Coarse Grind</option>
               <option value="Fine Grind">Fine Grind</option>

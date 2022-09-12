@@ -15,7 +15,7 @@ const Roasters = () => {
     listRoasters()
   }, [])
   return (
-    <div className="roaster_profile">
+    <div className="brewer_profile">
       <h1 className="page_header">Browse all Roasters </h1>
       {roasters.map((roaster) => (
         <div className="bean_card">

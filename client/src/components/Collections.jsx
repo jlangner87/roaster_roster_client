@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { Link } from "react-router-dom"
 
 const Collections = () => {
 
@@ -10,11 +11,15 @@ const Collections = () => {
     <div className="collection_bar">
     <h1>Browse Bean Collections</h1>
     <ul>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+      <Link to='/' className="dropdown_link">Home</Link>
+      <br />
+      </li>
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           Origin
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/beans/origin/Brazil">Brazil</a>
           <a href="/beans/origin/Colombia">Colombia</a>
           <a href="/beans/origin/Guatemala">Guatemala</a>
@@ -31,11 +36,11 @@ const Collections = () => {
           <a href="/beans/origin/Other">Other</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           Roast
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/roast/Espresso">Espresso Roast</a>
           <a href="/roast/Dark">Dark Roast</a>
           <a href="/roast/Medium">Medium Roast</a>
@@ -44,32 +49,32 @@ const Collections = () => {
           <a href="/roast/Other">Other</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           Grind
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/grind/Wholebean">Whole Bean</a>
           <a href="/grind/Coarse">Coarse Grind</a>
           <a href="/grind/Fine">Fine Grind</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           Misc
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/">Organic</a>
           <a href="/">Decaf</a>
           <a href="/">Fair Trade</a>
           <a href="/">Non-Profit</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           By Roaster
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/beans/roaster/1">Stone Street</a>
           <a href="/beans/roaster/2">Coffea Roasterie</a>
           <a href="/beans/roaster/3">Fire Department Coffee</a>
@@ -78,11 +83,11 @@ const Collections = () => {
           <a href="/beans/roaster/6">Stone Bru</a>
         </div>
       </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropdown_link">
+      <li className="dropdown">
+        <a href="javascript:void(0)" className="dropdown_link">
           By Retailer
         </a>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <a href="/">Medlar Coffee Co</a>
           <a href="/">Poima Studio</a>
           <a href="/">Pressed</a>

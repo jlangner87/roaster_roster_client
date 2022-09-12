@@ -57,7 +57,7 @@ const UpdateDeleteBean = () => {
 
 
   return (
-    <div className="new_bean_form">
+    <div className="profile">
       <h1 className="page_header">Add New Beans </h1>
       <div className="bean_form_container">
         <form onSubmit={handleSubmit} className="bean_form">
