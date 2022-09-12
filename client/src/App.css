@@ -1,3 +1,8 @@
+html {
+  background-color: #1b383e;
+  scroll-behavior: smooth;
+}
+
 .bean-img {
   width: 300px;
   height: auto;
@@ -15,8 +20,14 @@
 }
 
 .header {
-  background-color: #d1d0d0;
-  color: #1b383e;
+  background-color: #1b383e;
+  color: #d1d0d0;
+  text-align: center;
+}
+
+.page_header {
+  background-color: #1b383e;
+  color: #d1d0d0;
   text-align: center;
 }
 
@@ -75,12 +86,24 @@ text-align: left;
 }
 .bio_container {
   border: 2px solid #a06c38;
+  border-radius: 15px;
   width: 50%;
   margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 10px 10px 10px;
+  background-color: #d1d0d0;
+  color: #012351;
 }
+
 .page_bio {
   text-align: justify;
   padding: 6px
+}
+.page_header {
+  background-color: #d1d0d0;
+  color: #1b383e;
+  text-align: left;
+  width: 50%;
 }
 
 a {
@@ -118,12 +141,12 @@ ul {
 li a, .dropdown_link {
   display: inline-block;
   color: #d1d0d0;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropdown_link {
+li:hover, .dropdown:hover .dropdown_link {
   background-color: #6d7f60;
 }
 
@@ -177,32 +200,40 @@ li.dropdown {
 }
 
 .bean_name {
-  color: #d4d7c1;
+  color: #1b383e;
   margin-top: 40px;
 }
 
 .bean_description {
-  color: #d4d7c1;
+  color: #1b383e;
   font-size: 12px;
 }
 
 .bean_detail {
-  color: #d4d7c1;
+  color: #1b383e;
   font-size: 14px;
 }
 
 .buy_link {
-  color: #d4d7c1;
+  color: #1b383e;
   font-size: 12px;
   width: 200px;
 }
 
 .bean_form {
-  background-color: #d4d7c1;
+  background-color: #d1d0d0;
   color:#012351;
   margin-bottom: 100px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
+
+form {
+  text-align: left;
+}
+
 
 .mylogo {
   width: 200px;
@@ -239,4 +270,67 @@ li.dropdown {
 .brewer_profile {
   display: block;
   text-align: center;
+}
+
+.bean_card {
+  border: 2px solid #a06c38;
+  border-radius: 15px;
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #d1d0d0;
+  color: #1b383e;
+}
+
+.bean_container {
+  border: 2px solid #a06c38;
+  border-radius: 15px;
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 45px;
+  background-color: #d1d0d0;
+  color: #1b383e;
+}
+
+.toTop {
+  float: left;
+  margin-top: -40px;
+  height: 20px;
+  font-size: 14px;
+  background-color: #d1d0d0;
+  border: none;
+}
+
+.back {
+  float: left;
+  height: 20px;
+  font-size: 14px;
+  background-color: #d1d0d0;
+  border: none;
+}
+
+.bean_container ul {
+  background-color: transparent;
+  text-align: center;
+}
+
+.profile_image {
+  border-radius: 15px;
+  width: 60%;
+  margin-top: 5px;
+}
+
+.bean_descript {
+  background-color: #1b383e;
+  color: #d1d0d0;
+  padding: 20px 10px 20px 10px;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #a06c38;
+  border-radius: 15px;
+}
+
+.bean_container a:visited {
+  color: #1b383e;
 }

@@ -14,8 +14,9 @@ const BeanProfile = () => {
 useEffect(() => {
   const thisBean = async () => {
     let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 400
     setBean(response.data)
-    // window.scrollTo({top: 260, left: 0, behavior: 'smooth'})
   }
   thisBean()
 }, [])
@@ -25,20 +26,23 @@ const goBack = () => {
 }
 
   return (
-    <div className="profile">
+    <div className="brewer_profile">
+      <div className="bean_container">
       <button onClick={goBack} className="back">🔙</button>
       <h1>{bean.name}</h1>
-      <p>Roasted by: {bean.roaster}</p>
-      <p>{bean.roast}</p>
-      <p>{bean.origin}</p>
-      <p>{bean.grind}</p>
-      <p>{bean.description}</p>
-      <p> Buy Directly from {bean.roaster}</p>
+      <ul className="bean_attributes">
+        <li>{bean.roast} Roast</li>
+        <li>Origin: {bean.origin}</li>
+        <li>{bean.grind}</li>
+      </ul>
+      <img className="profile_image" src={bean.image} alt='product image'/><br/>
+      <p className="bean_descript">{bean.description}</p>
+      <p> Buy Directly from the roaster</p>
       <a href={bean.buy_link}>
         <button>Buy Now</button>
       </a>
       <p>${bean.price}</p>
-      <img className="bean-img" src={bean.image} alt='product image'/><br/>
+      </div>
       <br></br>
       <UpdateDeleteBean/>
     </div>

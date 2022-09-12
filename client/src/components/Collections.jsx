@@ -12,10 +12,6 @@ const Collections = () => {
     <h1>Browse Bean Collections</h1>
     <ul>
       <li className="dropdown">
-      <Link to='/' className="dropdown_link">Home</Link>
-      <br />
-      </li>
-      <li className="dropdown">
         <a href="javascript:void(0)" className="dropdown_link">
           Origin
         </a>

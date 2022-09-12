@@ -12,6 +12,7 @@ import RoasterCollection from './components/collections/Roaster'
 import OriginCollection from './components/collections/Origin'
 import RoastCollection from './components/collections/Roast'
 import GrindCollection from './components/collections/Grind'
+import RoasterProfile from './components/RoasterProfile'
 import Brewers from './pages/brewers'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/roasters" element={<Roasters />} />
+        <Route path="/roasters/:roasters_id" element={<RoasterProfile />} />
         <Route path="/beans" element={<Beans />} />
         <Route path="/beans/:beans_id" element={<BeanProfile />} />
         <Route

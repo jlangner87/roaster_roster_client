@@ -1,6 +1,6 @@
 import { BASE_URL } from '../globals'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -19,9 +19,11 @@ const Roasters = () => {
       <h1 className="page_header">Browse all Roasters </h1>
       {roasters.map((roaster) => (
         <div className="bean_card">
-          <h3 className="bean_name">{roaster.name}</h3>
-          <h3 className="bean_detail">{roaster.location}</h3>
-          <img className="product_pic" src={roaster.logo} />
+          <Link to={`/roasters/${roaster.id}`}>
+            <h3 className="bean_name">{roaster.name}</h3>
+            <h3 className="bean_detail">{roaster.location}</h3>
+            <img className="product_pic" src={roaster.logo} />
+          </Link>
           <br />
           <a className="buy_link" href={roaster.wesite}>
             <button>Visit Website</button>
