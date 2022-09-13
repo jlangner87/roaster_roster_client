@@ -210,6 +210,18 @@ li.dropdown {
 
 .roaster_name {
   color: #1b383e;
+  font-size: 28px;
+}
+
+.location {
+  color: #1b383e;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: -14px;
+}
+
+.business_logo {
+  width: 300px;
 }
 
 .bean_description {
@@ -227,6 +239,9 @@ li.dropdown {
   font-size: 12px;
   width: 200px;
   padding-top: 10px;
+}
+.bean_container a {
+  color: #1b383e;
 }
 
 .bean_form {
@@ -275,10 +290,6 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
-.brewer_profile {
-  display: block;
-  text-align: center;
-}
 
 .bean_card {
   border: 2px solid #a06c38;
@@ -305,9 +316,9 @@ form {
 
 .toTop {
   float: left;
-  margin-top: -40px;
+  margin-top: -30px;
   height: 20px;
-  font-size: 14px;
+  font-size: 20px;
   background-color: #d1d0d0;
   border: none;
 }
@@ -455,5 +466,19 @@ form {
 
   form {
     text-align: center;
+  }
+
+  .product_pic {
+    width: 85%;
+  }
+  .bean_descript {
+    background-color: #1b383e;
+    color: #d1d0d0;
+    padding: 20px 10px 20px 10px;
+    width: 85%;
+    margin: 0 auto;
+    border: 2px solid #a06c38;
+    border-radius: 15px;
+    text-align: left;
   }
 }

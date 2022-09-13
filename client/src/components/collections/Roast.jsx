@@ -11,22 +11,24 @@ const RoastCollection = () => {
     const listBeans = async () => {
       let res = await axios.get(`${BASE_URL}/api/beans/collection/${roast_id}`)
       setBeans(res.data)
-      window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     }
     listBeans()
   }, [])
 
   return (
     <div className="bean_profile">
-      <h1 className="heading">Browse {roast_id} Roast Beans</h1>
+      <h1 className="heading" id='top'>Browse {roast_id} Roast Beans</h1>
       {beans.map((bean) => (
         <div className="bean_card">
+            <a href="#top" className="scroll">
+            <button className="toTop">🔝</button>
+          </a>
           <Link to={`/beans/${bean.id}`}>
           <h3 className="bean_name">{bean.name}</h3>
           <h3 className="bean_detail">${bean.price}</h3>
           <img className="profile_image" src={bean.image} />
           </Link>
-          <p className="bean_description">{bean.description}</p>
+          <p className="bean_descript">{bean.description}</p>
           <a className="buy_link" href={bean.buy_link}>
             <button>Buy Now</button>
           </a>

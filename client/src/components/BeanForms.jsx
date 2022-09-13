@@ -51,6 +51,7 @@ const BeanForm = () => {
               <option value="Not Specified"> Origin </option>
               <option value="Brazil">Brazil</option>
               <option value="Colombia">Colombia</option>
+              <option value="Etheopia">Etheopia</option>
               <option value="Guatemala">Guatemala</option>
               <option value="Hawaii">Hawaii</option>
               <option value="India">India</option>
@@ -68,10 +69,12 @@ const BeanForm = () => {
           <label for="roast">Roast:</label>
           <select onChange={handleChange} value={formState.roast} id="roast">
               <option value="Not Specified" > Roast </option>
-              <option value="Espresso"></option>
+              <option value="Espresso">Espresso</option>
               <option value="Dark">Dark Roast</option>
+              <option value="Dark">Medium Roast</option>
               <option value="Light">Light Roast</option>
               <option value="Blonde">Blonde Roast</option>
+              <option value="Blonde">Other Roast</option>
           </select><br/>
 
 

@@ -28,11 +28,12 @@ const goBack = () => {
     <div className="brewer_profile">
        <div className="bean_container">
       <button onClick={goBack} className="back">🔙</button>
-      <h1>{roaster.name}</h1>
-      <p>{roaster.location}</p>
-      <img className="profile_image" src={roaster.logo}/>
+      <h1 className="roaster_name">{roaster.name}</h1>
+      <p className="location">{roaster.location}</p>
+      <img className="business_logo" src={roaster.logo}/>
       <p className="bean_descript">{roaster.bio}</p>
-      <a href={`/beans/roaster/${roaster.id}`}><p>View the {roaster.name} Collection</p></a>
+      <a href={`/beans/roaster/${roaster.id}`}>View the {roaster.name} Collection</a><br/>
+      <br/>
       <a href={roaster.wesite}>
         <button>Visit Site</button>
       </a>

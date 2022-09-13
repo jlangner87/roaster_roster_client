@@ -3,12 +3,11 @@ import { useEffect, useState } from 'react'
 import { useParams, Link} from 'react-router-dom'
 import axios from 'axios'
 
-const GrindCollection = () => {
-  let {grind_id} = useParams()
+const LowPriceCollection = () => {
   const [beans, setBeans] = useState([{}])
   useEffect(() => {
     const listBeans = async () => {
-      let res = await axios.get(`${BASE_URL}/api/beans/collection/${grind_id}`)
+      let res = await axios.get(`${BASE_URL}/api/beans/price/low`)
       setBeans(res.data)
     }
     listBeans()
@@ -16,7 +15,7 @@ const GrindCollection = () => {
 
   return (
     <div className="bean_profile">
-      <h1 className="heading" id="top">Browse Beans by {grind_id} </h1>
+      <h1 className="heading" id="top">Browse Beans by Under $15</h1>
       {beans.map((bean) => (
         <div className="bean_card">
             <a href="#top" className="scroll">
@@ -37,4 +36,4 @@ const GrindCollection = () => {
   )
 }
 
-export default GrindCollection
+export default LowPriceCollection

@@ -25,8 +25,8 @@ const Roasters = () => {
           <br></br>
           <Link to={`/roasters/${roaster.id}`}>
             <h3 className="roaster_name">{roaster.name}</h3>
-            <h3 className="bean_detail">{roaster.location}</h3>
-            <img className="product_pic" src={roaster.logo} />
+            <h3 className="location">{roaster.location}</h3>
+            <img className="business_logo" src={roaster.logo} />
           </Link>
           <br />
           <a className="buy_link" href={roaster.wesite}>

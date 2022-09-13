@@ -18,6 +18,7 @@ const Collections = () => {
         <div className="dropdown-content">
           <a href="/beans/origin/Brazil">Brazil</a>
           <a href="/beans/origin/Colombia">Colombia</a>
+          <a href="/beans/origin/Etheopia">Etheopia</a>
           <a href="/beans/origin/Guatemala">Guatemala</a>
           <a href="/beans/origin/Hawaii">Hawaii</a>
           <a href="/beans/origin/India">India</a>
@@ -60,13 +61,15 @@ const Collections = () => {
           Misc
         </a>
         <div className="dropdown-content">
-          <a href="/">Organic</a>
+          <a href="/collections/Organic">Organic</a>
+          <a href="/price/low">Under $15</a>
           <a href="/">Decaf</a>
           <a href="/">Fair Trade</a>
           <a href="/">Non-Profit</a>
           <a href="/">Veteran Owned</a>
           <a href="/">Good Cause</a>
           <a href="/">Sustainable</a>
+  
         </div>
       </li>
     </ul>

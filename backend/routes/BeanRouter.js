@@ -15,6 +15,7 @@ Router.get('/collection/wholebean', controller.WholeBean)
 Router.get('/collection/coarse', controller.CourseGround)
 Router.get('/collection/fine', controller.FineGround)
 Router.get('/collection/origin/:country', controller.OriginCollections)
+Router.get('/price/low', controller.CheapBeans)
 //CREATE, UPDATE, DELETE
 Router.post('/add', controller.PostBean)
 Router.delete('/:beans_id', controller.DeleteBean)

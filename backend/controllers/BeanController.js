@@ -1,3 +1,4 @@
+const { Op } = require('sequelize')
 const { Bean } = require('../models')
 
 const GetBeans = async (req, res) => {
@@ -142,6 +143,17 @@ const OriginCollections = async (req, res) => {
   res.send(OriginCollection)
 }
 
+const CheapBeans = async (req, res) => {
+  let bean = await Bean.findAll({
+    where: {
+      price: {
+        [Op.lt]: 15
+      }
+    }
+  })
+  res.send(bean)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
@@ -158,6 +170,7 @@ module.exports = {
   WholeBean,
   CourseGround,
   FineGround,
-  OriginCollections
+  OriginCollections,
+  CheapBeans
   // Decaf
 }

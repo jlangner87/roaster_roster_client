@@ -15,6 +15,8 @@ import GrindCollection from './components/collections/Grind'
 import RoasterProfile from './components/RoasterProfile'
 import RetailerProfile from './components/RetailerProfile'
 import Brewers from './pages/brewers'
+import OrganicCollection from './components/collections/Organic'
+import LowPriceCollection from './components/collections/LtFifteen'
 
 function App() {
   return (
@@ -30,6 +32,11 @@ function App() {
           path="/beans/roaster/:roaster_id"
           element={<RoasterCollection />}
         />
+        <Route
+          path="/collections/:organic_id"
+          element={<OrganicCollection />}
+        />
+        <Route path="/price/low" element={<LowPriceCollection />} />
         <Route path="/retailers/:retailer_id" element={<RetailerProfile />} />
         <Route path="/brewers" element={<Brewers />} />
         <Route path="/beans/origin/:origin" element={<OriginCollection />} />
