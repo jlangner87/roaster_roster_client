@@ -13,7 +13,15 @@ const GetOneRoaster = async (req, res) => {
   res.send(desiredRoaster)
 }
 
+const DumpRoasters = async (req, res) => {
+  await Roaster.destroy({
+    where: {}
+  })
+  res.send('You just deleted ALL Roasters')
+}
+
 module.exports = {
   GetRoasters,
-  GetOneRoaster
+  GetOneRoaster,
+  DumpRoasters
 }
