@@ -1,7 +1,6 @@
 import { BASE_URL } from '../globals'
 import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Roasters = () => {
@@ -22,7 +21,7 @@ const Roasters = () => {
         <div className="bean_card">
           <a href="#top" className="scroll">
             <button className="toTop_roast">🔝</button>
-          </a>{' '}
+          </a>
           <br></br>
           <Link to={`/roasters/${roaster.id}`}>
             <h3 className="roaster_name">{roaster.name}</h3>

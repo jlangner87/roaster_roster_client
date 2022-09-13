@@ -4,6 +4,10 @@ html {
   font-family: 'Libre Baskerville', serif;
 }
 
+.visited {
+  color: #1b383e;
+}
+
 .bean-img {
   width: 300px;
   height: auto;
@@ -159,7 +163,6 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #d1d0d0;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

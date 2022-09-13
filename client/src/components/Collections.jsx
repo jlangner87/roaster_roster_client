@@ -64,30 +64,9 @@ const Collections = () => {
           <a href="/">Decaf</a>
           <a href="/">Fair Trade</a>
           <a href="/">Non-Profit</a>
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="javascript:void(0)" className="dropdown_link">
-          By Roaster
-        </a>
-        <div className="dropdown-content">
-          <a href="/beans/roaster/1">Stone Street</a>
-          <a href="/beans/roaster/2">Coffea Roasterie</a>
-          <a href="/beans/roaster/3">Fire Department Coffee</a>
-          <a href="/beans/roaster/4">Dark Matter Coffee</a>
-          <a href="/beans/roaster/5">Scout Finch</a>
-          <a href="/beans/roaster/6">Stone Bru</a>
-        </div>
-      </li>
-      <li className="dropdown">
-        <a href="javascript:void(0)" className="dropdown_link">
-          By Retailer
-        </a>
-        <div className="dropdown-content">
-          <a href="/">Medlar Coffee Co</a>
-          <a href="/">Poima Studio</a>
-          <a href="/">Pressed</a>
-          <a href="/">Carrol's Bakery</a>
+          <a href="/">Veteran Owned</a>
+          <a href="/">Good Cause</a>
+          <a href="/">Sustainable</a>
         </div>
       </li>
     </ul>
