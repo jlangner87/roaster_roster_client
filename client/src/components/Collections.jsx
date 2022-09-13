@@ -9,7 +9,7 @@ const Collections = () => {
 
   return (
     <div className="collection_bar">
-    <h3>Browse Bean Collections</h3>
+    <h3 className="collection_header">Browse Bean Collections</h3>
     <ul>
       <li className="dropdown">
         <a href="javascript:void(0)" className="dropdown_link">

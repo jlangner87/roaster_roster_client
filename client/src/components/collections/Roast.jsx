@@ -18,13 +18,13 @@ const RoastCollection = () => {
 
   return (
     <div className="bean_profile">
-      <h1 className="page_header">Browse {roast_id} Roast Beans</h1>
+      <h1 className="heading">Browse {roast_id} Roast Beans</h1>
       {beans.map((bean) => (
         <div className="bean_card">
           <Link to={`/beans/${bean.id}`}>
           <h3 className="bean_name">{bean.name}</h3>
           <h3 className="bean_detail">${bean.price}</h3>
-          <img className="product_pic" src={bean.image} />
+          <img className="profile_image" src={bean.image} />
           </Link>
           <p className="bean_description">{bean.description}</p>
           <a className="buy_link" href={bean.buy_link}>

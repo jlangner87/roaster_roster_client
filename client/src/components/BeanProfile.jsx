@@ -14,8 +14,6 @@ const BeanProfile = () => {
 useEffect(() => {
   const thisBean = async () => {
     let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 400
     setBean(response.data)
   }
   thisBean()

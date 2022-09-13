@@ -13,7 +13,6 @@ const UpdateDeleteBean = () => {
     const thisBean = async () => {
       let response = await axios.get(`${BASE_URL}/api/beans/${beans_id}`)
       setBean(response.data)
-      // window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
       console.log({bean})
     }
     thisBean()
@@ -58,7 +57,7 @@ const UpdateDeleteBean = () => {
 
   return (
     <div className="profile">
-      <h1 className="page_header">Update or Delete This Bean </h1>
+      <h1 className="header">Update or Delete This Bean </h1>
       <div className="bean_form_container">
         <form onSubmit={handleSubmit} className="bean_form">
           <label for="name">Bean Name:</label><br/>

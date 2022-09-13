@@ -16,7 +16,7 @@ const Beans = () => {
 
   return (
     <div className="brewer_profile">
-      <h1 className="page_header" id="top">
+      <h1 className="heading" id="top">
         Browse all Beans
       </h1>
       {beans.map((bean) => (
@@ -30,7 +30,8 @@ const Beans = () => {
             <h3 className="bean_detail">${bean.price}</h3>
             <img className="product_pic" src={bean.image} />
           </Link>
-          <p className="bean_description">{bean.description}</p>
+          <p className="bean_descript">{bean.description}</p>
+          <br></br>
           <a className="buy_link" href={bean.buy_link}>
             <button>Buy Now</button>
           </a>

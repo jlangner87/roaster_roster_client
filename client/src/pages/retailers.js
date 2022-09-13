@@ -15,7 +15,7 @@ const Retailers = () => {
   }, [])
   return (
     <div className="brewer_profile">
-      <h1 className="page_header">Browse all Retailers </h1>
+      <h1 className="heading">Browse all Retailers </h1>
       {retailers.map((retailer) => (
         <div className="bean_card">
           <h3 className="bean_name">{retailer.name}</h3>
