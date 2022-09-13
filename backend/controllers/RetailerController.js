@@ -12,7 +12,15 @@ const GetOneRetailer = async (req, res) => {
   res.send(desiredRetailer)
 }
 
+const DumpRetailers = async (req, res) => {
+  await Retailer.destroy({
+    where: {}
+  })
+  res.send('You just deleted ALL Retailers')
+}
+
 module.exports = {
   GetRetailers,
-  GetOneRetailer
+  GetOneRetailer,
+  DumpRetailers
 }
