@@ -80,10 +80,10 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 <img src="assets/mock.png" width=720px>
 
 #### Dropdown Menu for quick table queries
-<img src="assets/drop_menu.png"
+<img src="assets/drop_menu.png">
 
 #### Mobile friendly styling
-<img src="assets/mobile.png"
+<img src="assets/mobile.png">
 
 ---
 ### **Future Development Opportunity**
@@ -105,7 +105,7 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 
 ### _Credits & Citations_
 
-##### useParams Docs [Remix_reactrouter.com](https://v5.reactrouter.com/web/api/Hooks/useparams)
+##### useParams Docs [Remix_ReactRouter](https://v5.reactrouter.com/web/api/Hooks/useparams)
 
 ##### CSS Dropdown Menu [W3Schools](https://www.w3schools.com/css/css_dropdowns.asp)
 
