@@ -79,7 +79,7 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 #### Desktop/Mobile Mockup
 <img src="assets/mock.png" width=720px>
 
-#### Dropdown Menu for quick table queries
+#### Dropdown Menu for quick queries
 <img src="assets/drop_menu.png">
 
 #### Mobile friendly styling
@@ -88,18 +88,18 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 ---
 ### **Future Development Opportunity**
 
-#### Add conditional authentication with separate authorization for each of three user models.
+##### Add conditional authentication with separate authorization for each of three user models.
 
-#### Connoisseur model: Can leave reviews, "favorite" beans for later, and rank beans on a scale of 1-5 beans.
+##### Connoisseur model: Can leave reviews, "favorite" beans for later, and rank beans on a scale of 1-5 beans.
 
-#### Additional Bean attributes
+##### Additional Bean attributes
 - Fair-Trade
 - Good Causes
 - Non-Profit
 - Decaf
 - Veteran Owned
 
-#### Redeploy "backend" directory on AWS.
+##### Redeploy "backend" directory on AWS.
 
 ---
 
@@ -112,3 +112,6 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 ##### Querying with Logical Operators [Sequelize_docs](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/)
 
 ##### Multiple URL Params Syntax [StackOverflow](https://stackoverflow.com/questions/15128849/using-multiple-parameters-in-url-in-express)
+
+---
+![footer](assets/JL_OctopusLogo_Final_JoshuaLangner_Logo_Purple_Horizontal_Extended.png)

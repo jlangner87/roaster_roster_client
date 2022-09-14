@@ -10,7 +10,7 @@ const Collections = () => {
   return (
     <div className="collection_bar">
     <h3 className="collection_header">Browse Bean Collections</h3>
-    <ul>
+    <ul className="actual_bar">
       <li className="dropdown">
         <a href="javascript:void(0)" className="dropdown_link">
           Origin
@@ -69,8 +69,10 @@ const Collections = () => {
           <a href="/">Veteran Owned</a>
           <a href="/">Good Cause</a>
           <a href="/">Sustainable</a>
-  
         </div>
+      </li>
+      <li className="dropdown">
+        <a href="/custom">Custom</a>
       </li>
     </ul>
   </div>

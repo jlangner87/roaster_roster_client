@@ -73,6 +73,7 @@ const UpdateDeleteBean = () => {
               <option value="Not Specified"></option>
               <option value="Brazil">Brazil</option>
               <option value="Colombia">Colombia</option>
+              <option value="Etheopia">Etheopia</option>
               <option value="Guatemala">Guatemala</option>
               <option value="Hawaii">Hawaii</option>
               <option value="India">India</option>

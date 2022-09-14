@@ -17,6 +17,7 @@ import RetailerProfile from './components/RetailerProfile'
 import Brewers from './pages/brewers'
 import OrganicCollection from './components/collections/Organic'
 import LowPriceCollection from './components/collections/LtFifteen'
+import Custom from './pages/custom'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/roast/:roast_id" element={<RoastCollection />} />
         <Route path="/grind/:grind_id" element={<GrindCollection />} />
         <Route path="/admin" element={<RoasterHome />} />
+        <Route path="/custom" element={<Custom />} />
       </Routes>
       <Footer />
     </div>
