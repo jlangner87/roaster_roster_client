@@ -18,6 +18,7 @@ import Brewers from './pages/brewers'
 import OrganicCollection from './components/collections/Organic'
 import LowPriceCollection from './components/collections/LtFifteen'
 import Custom from './pages/custom'
+import CustomResults from './components/collections/CustomResults'
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
         <Route path="/grind/:grind_id" element={<GrindCollection />} />
         <Route path="/admin" element={<RoasterHome />} />
         <Route path="/custom" element={<Custom />} />
+        <Route
+          path="/custom/:country/:grindId/:roastId/:organicId"
+          element={<CustomResults />}
+        />
       </Routes>
       <Footer />
     </div>

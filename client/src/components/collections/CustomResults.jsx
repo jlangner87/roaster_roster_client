@@ -5,19 +5,31 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const CustomResults = () => {
-  let {grind_id} = useParams()
+  let {country, grindId, roastId, organicId} = useParams()
+
+  const urlifyGrind = () => {
+    let grindURL = grindId.replace(' ', '%20')
+    return(grindURL)
+  }
+  urlifyGrind()
+
   const [beans, setBeans] = useState([{}])
   useEffect(() => {
     const listBeans = async () => {
-      let res = await axios.get(`${BASE_URL}/api/beans/collection/${grind_id}`)
+      let grindURL = grindId.replace(' ', '%20')
+      let res = await axios.get(`${BASE_URL}/api/beans/custom/${country}/${roastId}/${grindURL}/${organicId}`)
       setBeans(res.data)
+      console.log(res.data)
     }
     listBeans()
   }, [])
 
   return (
     <div className="bean_profile">
-      <h1 className="heading" id="top">Browse Beans by {grind_id} </h1>
+      <h1 className="heading" id='top'>Browse your collection of</h1>
+      <h1 className="heading2">{grindId} ・ {roastId} Beans</h1>
+      <h1 className="custom_location">From {country}</h1>
+      <h1 className='custom_organic'> Organic: {organicId}</h1>
       {beans.map((bean) => (
         <div className="bean_card">
             <a href="#top" className="scroll">

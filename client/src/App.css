@@ -102,7 +102,8 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  overflow: scroll
+  overflow: scroll;
+  padding-bottom: 10px;
 }
 
 .nav_card {
@@ -133,6 +134,9 @@ a:visited {
     color: #d1d0d0;
     font-size: 28px;
     font-family: 'Lato', sans-serif;
+    border-top: 2px solid #a06c38;
+    padding-top: 10px;
+    margin-top: 6px;
   }
 
   .collection_bar {
@@ -195,6 +199,10 @@ a:visited {
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .dropdown {
+    line-height: 100%;
   }
   .actual_bar {
     height: 24px;
@@ -397,6 +405,34 @@ form {
   color: #d1d0d0;
   text-align: center;
 }
+.heading2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a06c38;
+  font-size: 28px;
+  text-align: center;
+}
+
+.custom_location {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 0px;
+  color: #d1d0d0;
+  font-size: 18px;
+  text-align: center;
+}
+.custom_organic {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 0px;
+  color: #d1d0d0;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
 
 .custom_form {
   display: flex;
@@ -495,6 +531,22 @@ form {
     margin: 0 auto;
     border: 2px solid #a06c38;
     border-radius: 15px;
+    text-align: left;
+  }
+
+  .custom_form {
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d0d0;
+    margin-bottom: 280px;
+    width: 60%;
+    margin: 0 auto;;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  .custom_form div {
+    margin: 15px;
     text-align: left;
   }
 }
