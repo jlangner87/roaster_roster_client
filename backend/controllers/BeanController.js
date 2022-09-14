@@ -1,5 +1,5 @@
 const { Op } = require('sequelize')
-const { Bean } = require('../models')
+const { Bean, Sequelize } = require('../models')
 
 const GetBeans = async (req, res) => {
   try {
@@ -154,6 +154,22 @@ const CheapBeans = async (req, res) => {
   res.send(bean)
 }
 
+const CustomCollection = async (req, res) => {
+  let originParam = req.params.country
+  let roastParam = req.params.roastId
+  let grindParam = req.params.grindId
+  let organicParam = req.params.organic
+  let newCollection = await Bean.findAll({
+    where: Sequelize.and(
+      { origin: originParam },
+      { roast: roastParam },
+      { grind: grindParam },
+      { organic: organicParam }
+    )
+  })
+  res.send(newCollection)
+}
+
 module.exports = {
   GetBeans,
   PostBean,
@@ -171,6 +187,7 @@ module.exports = {
   CourseGround,
   FineGround,
   OriginCollections,
-  CheapBeans
+  CheapBeans,
+  CustomCollection
   // Decaf
 }

@@ -20,5 +20,10 @@ Router.get('/price/low', controller.CheapBeans)
 Router.post('/add', controller.PostBean)
 Router.delete('/:beans_id', controller.DeleteBean)
 Router.patch('/:beans_id', controller.PatchBean)
+//CUSTOM SEARCH IN DEVELOPMENT
+Router.get(
+  '/custom/:country/:roastId/:grindId/:organic',
+  controller.CustomCollection
+)
 
 module.exports = Router
