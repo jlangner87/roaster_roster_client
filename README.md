@@ -34,6 +34,15 @@ The Brewer has the same functionality as the retailer with one  key difference. 
 
 The Connoisseur (the average Joe who just loves a good cup of Joe) can also browse the beans by collection. The application uses the "Bean" model attributes to sort the beans into easily browsable collections based off of the attributes
 
+---
+
+### **Getting Started**
+- Fork and Clone this repository
+- npm install
+- npm run dev (to start the express server)
+- npm run start (to launch the React app in a browser)
+
+---
 
 ### **_Trello Board_**
 
@@ -67,22 +76,21 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 
 ### **_Screenshots_**
 
-#### Title
+#### Desktop/Mobile Mockup
+<img src="assets/mock.png" width=720px>
 
-#### ![Title](path)
+#### Dropdown Menu for quick table queries
+<img src="assets/drop_menu.png"
 
-#### Title
-
-#### ![Title](path)
-#### Title
-
-#### ![Title](path)
+#### Mobile friendly styling
+<img src="assets/mobile.png"
 
 ---
+### **Future Development Opportunity**
 
-### **Future Development Opportunity (Post MVP)**
+#### Add conditional authentication with separate authorization for each of three user models.
 
-#### Brewer and Connoisseur models
+#### Connoisseur model: Can leave reviews, "favorite" beans for later, and rank beans on a scale of 1-5 beans.
 
 #### Additional Bean attributes
 - Fair-Trade
@@ -91,13 +99,7 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 - Decaf
 - Veteran Owned
 
-#### A feature that lets users rate individual bean roasts on a scale of 1-5 beans. Then add a "Top Picks collection with all beans rated 4 or 5"
-
-#### A favoriting feature that bookmarks beans and Roasters for Retailers and Connoisseur to come back and quickly find what they already know they love.
-
-#### Connoisseur reiwes.
-
-#### Deep Search.
+#### Redeploy "backend" directory on AWS.
 
 ---
 
@@ -106,3 +108,7 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 ##### useParams Docs [Remix_reactrouter.com](https://v5.reactrouter.com/web/api/Hooks/useparams)
 
 ##### CSS Dropdown Menu [W3Schools](https://www.w3schools.com/css/css_dropdowns.asp)
+
+##### Querying with Logical Operators [Sequelize_docs](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/)
+
+##### Multiple URL Params Syntax [StackOverflow](https://stackoverflow.com/questions/15128849/using-multiple-parameters-in-url-in-express)
