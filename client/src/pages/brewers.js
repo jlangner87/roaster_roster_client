@@ -1,8 +1,3 @@
-import { BASE_URL } from '../globals'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
 import brewerLink from '../page_assets/BREWERS.png'
 const Brewers = () => {
   return (

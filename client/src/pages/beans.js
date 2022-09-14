@@ -1,7 +1,6 @@
 import { BASE_URL } from '../globals'
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Beans = () => {

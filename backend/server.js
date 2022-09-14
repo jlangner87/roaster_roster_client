@@ -18,6 +18,3 @@ app.use('/api', APIRouter)
 app.get('/', (req, res) => {
   res.send(`WikiBean-api is berewing here ☕️`)
 })
-app.get('/testroute', (req, res) => {
-  res.send(`WikiBean-api is ALSO berewing here on the test route ☕️`)
-})

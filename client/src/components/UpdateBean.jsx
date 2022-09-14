@@ -1,5 +1,5 @@
 import { BASE_URL } from "../globals"
-import { useState, UseEffect, useEffect } from "react"
+import { useState, useEffect } from "react"
 import {useNavigate, useParams} from "react-router-dom"
 import axios from "axios"
 

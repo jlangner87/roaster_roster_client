@@ -1,9 +1,7 @@
 import { BASE_URL } from "../globals"
-import { useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
+import { useEffect, useState } from "react"
+import { useParams, useNavigate } from "react-router-dom"
 import axios from 'axios'
-import { useState } from "react"
 import UpdateDeleteBean from "./UpdateBean"
 
 const BeanProfile = () => {

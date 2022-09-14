@@ -1,7 +1,5 @@
-import { BASE_URL } from '../globals'
 import { useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const Custom = () => {
   let navigate = useNavigate()
@@ -22,7 +20,6 @@ const Custom = () => {
     navigate(
       `/custom/${formState.origin}/${formState.grind}/${formState.roast}/${formState.organic}`
     )
-    // setFormState(initialState)
   }
 
   return (
