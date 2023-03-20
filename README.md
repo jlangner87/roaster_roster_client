@@ -4,11 +4,11 @@
 
 ---
 
-| [LinkedIn](https://www.linkedin.com/in/josh-langner-48) | [GitHub](https://github.com/jlangner87) | [Portfolio](https://jlangner.herokuapp.com/) |
+| [LinkedIn](https://www.linkedin.com/in/josh-langner-48) | [GitHub](https://github.com/jlangner87) | [Portfolio](https://joshua-langner.com) |
 
 ---
 
-#### Deployed Application [Netlify] (https://wikibean.netlify.app/)
+#### Deployed Application *This application is currently not deployed due to loss of free hosting service. As of 03/19/2023, I am searching for a home for this app. This doccumentation shows how to load this application on a localhost*
 
 ---
 
@@ -41,12 +41,6 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 - npm install
 - npm run dev (to start the express server)
 - npm run start (to launch the React app in a browser)
-
----
-
-### **_Trello Board_**
-
-#### [Trello](https://trello.com/b/95nVN1hO/roaster-roster)
 
 ---
 
@@ -99,7 +93,6 @@ The Connoisseur (the average Joe who just loves a good cup of Joe) can also brow
 - Decaf
 - Veteran Owned
 
-##### Redeploy "backend" directory on AWS.
 
 ---
 
