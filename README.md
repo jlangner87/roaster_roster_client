@@ -8,7 +8,8 @@
 
 ---
 
-#### Deployed Application *This application is currently not deployed due to loss of free hosting service. As of 03/19/2023, I am searching for a home for this app. This doccumentation shows how to load this application on a localhost*
+#### Deployed Application:
+*This application is currently not deployed due to loss of free hosting service. As of 03/19/2023, I am searching for a home for this app. This doccumentation shows how to load this application on a localhost*
 
 ---
 
